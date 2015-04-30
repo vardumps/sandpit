@@ -1,0 +1,112 @@
+/* EXTERNAL - FONT - ABC ORDER */
+/* EXTERNAL - RESET - ABC ORDER */
+/* KIT - GEAR - NEEDS ORDER */
+@font-face { font-family: droid-regular; src: url("fonts/fujisan/DroidSerif.eot"); src: url("fonts/fujisan/DroidSerif.eot#iefix") format("embedded-opentype"), url("fonts/fujisan/DroidSerif.woff") format("woff"), url("fonts/fujisan/DroidSerif.woff2") format("woff2"), url("fonts/fujisan/DroidSerif.ttf") format("truetype"), url("fonts/fujisan/DroidSerif.svg#fujisan/DroidSerif") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: opensans-regular; src: url("fonts/fujisan/OpenSans-Regular.eot"); src: url("fonts/fujisan/OpenSans-Regular.eot#iefix") format("embedded-opentype"), url("fonts/fujisan/OpenSans-Regular.woff") format("woff"), url("fonts/fujisan/OpenSans-Regular.woff2") format("woff2"), url("fonts/fujisan/OpenSans-Regular.ttf") format("truetype"), url("fonts/fujisan/OpenSans-Regular.svg#fujisan/OpenSans-Regular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: sushi-high; src: url("fonts/fujisan/SUSHH___.eot"); src: url("fonts/fujisan/SUSHH___.eot#iefix") format("embedded-opentype"), url("fonts/fujisan/SUSHH___.woff") format("woff"), url("fonts/fujisan/SUSHH___.woff2") format("woff2"), url("fonts/fujisan/SUSHH___.ttf") format("truetype"), url("fonts/fujisan/SUSHH___.svg#fujisan/SUSHH___") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: fontawesome-webfont; src: url("fonts/framework/font-awesome-4.1.0.eot"); src: url("fonts/framework/font-awesome-4.1.0.eot#iefix") format("embedded-opentype"), url("fonts/framework/font-awesome-4.1.0.woff") format("woff"), url("fonts/framework/font-awesome-4.1.0.woff2") format("woff2"), url("fonts/framework/font-awesome-4.1.0.ttf") format("truetype"), url("fonts/framework/font-awesome-4.1.0.svg#framework/font-awesome-4.1.0") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: Glyphicons Halflings; src: url("fonts/elmar-reizen/glyphicons-halflings-regular.eot"); src: url("fonts/elmar-reizen/glyphicons-halflings-regular.eot#iefix") format("embedded-opentype"), url("fonts/elmar-reizen/glyphicons-halflings-regular.woff") format("woff"), url("fonts/elmar-reizen/glyphicons-halflings-regular.woff2") format("woff2"), url("fonts/elmar-reizen/glyphicons-halflings-regular.ttf") format("truetype"), url("fonts/elmar-reizen/glyphicons-halflings-regular.svg#elmar-reizen/glyphicons-halflings-regular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: formular; src: url("fonts/elmar-reizen/formular.eot"); src: url("fonts/elmar-reizen/formular.eot#iefix") format("embedded-opentype"), url("fonts/elmar-reizen/formular.woff") format("woff"), url("fonts/elmar-reizen/formular.woff2") format("woff2"), url("fonts/elmar-reizen/formular.ttf") format("truetype"), url("fonts/elmar-reizen/formular.svg#elmar-reizen/formular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: formular-light; src: url("fonts/elmar-reizen/formular-light.eot"); src: url("fonts/elmar-reizen/formular-light.eot#iefix") format("embedded-opentype"), url("fonts/elmar-reizen/formular-light.woff") format("woff"), url("fonts/elmar-reizen/formular-light.woff2") format("woff2"), url("fonts/elmar-reizen/formular-light.ttf") format("truetype"), url("fonts/elmar-reizen/formular-light.svg#elmar-reizen/formular-light") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: formular-medium; src: url("fonts/elmar-reizen/formular-medium.eot"); src: url("fonts/elmar-reizen/formular-medium.eot#iefix") format("embedded-opentype"), url("fonts/elmar-reizen/formular-medium.woff") format("woff"), url("fonts/elmar-reizen/formular-medium.woff2") format("woff2"), url("fonts/elmar-reizen/formular-medium.ttf") format("truetype"), url("fonts/elmar-reizen/formular-medium.svg#elmar-reizen/formular-medium") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: formular-bold; src: url("fonts/elmar-reizen/formular-bold.eot"); src: url("fonts/elmar-reizen/formular-bold.eot#iefix") format("embedded-opentype"), url("fonts/elmar-reizen/formular-bold.woff") format("woff"), url("fonts/elmar-reizen/formular-bold.woff2") format("woff2"), url("fonts/elmar-reizen/formular-bold.ttf") format("truetype"), url("fonts/elmar-reizen/formular-bold.svg#elmar-reizen/formular-bold") format("svg"); font-weight: normal; font-style: normal; }
+.tl-clearfix:after { visibility: hidden; display: block !important; font-size: 0; content: ""; clear: both; height: 0; }
+
+* html body .tl-clearfix { zoom: 0; }
+
+*:first-child + html body .tl-clearfix { zoom: 0; }
+
+/* KIT - GEAR - ABC ORDER */
+.tl-button { -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; }
+
+.tl-input-box { margin: 0; padding: 0; }
+
+.tl-button:after, .tl-button > b { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+
+.tl-theme-pb .tl-button:before { content: ''; position: relative; display: inline-block; height: 100%; vertical-align: middle; }
+
+/* KIT - GIZMO - ABC ORDER */
+.tl-box-middle { -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); position: absolute; left: 50%; top: 50%; z-index: 1000; width: 40%; /*height: 50%;*/ color: #69696a; text-align: center; box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); border-radius: 5px; background: #fff; }
+.tl-box-middle > h2 { display: block; height: 44px; line-height: 44px; margin: 0 0 25px 0; padding: 0 20px; font-family: 'Roboto-Regular'; font-size: 17px; text-align: left; text-transform: uppercase; color: #fff; border-radius: 5px 5px 0 0; background: #d32a2a; }
+.tl-box-middle > p { margin: 0 0 25px 0; padding: 0 20px; text-align: left; font-size: 16px; font-family: 'Roboto-Regular'; line-height: 22px; }
+.tl-box-middle em, .tl-box-middle .button { color: #d32a2a; font-style: normal; }
+.tl-box-middle .button { display: inline-block; text-align: center; margin-bottom: 25px; height: 35px; line-height: 35px; text-transform: uppercase; padding: 0 15%; border-radius: 5px; color: #fff; cursor: pointer; background: #d32a2a; }
+.tl-box-middle .close-button > .fa.fa-times:before { font-size: 19px; }
+
+.tl-button, .tl-button:after { -webkit-transition: border-color ease-in-out 0.25s, color ease-in-out 0.25s; -moz-transition: border-color ease-in-out 0.25s, border-color ease-in-out 0.25s; -ms-transition: border-color ease-in-out 0.25s, border-color ease-in-out 0.25s; -o-transition: border-color ease-in-out 0.25s, border-color ease-in-out 0.25s; }
+
+.tl-button { font-family: Comic Sans MS, Verdana, Arial, Helvetica; font-size: 12px; position: relative; display: block; margin: 0 0 10px 0; padding: 0; font-size: 10px; line-height: 24px; border: none; border: 0; color: #555; text-decoration: none; text-align: center; text-transform: uppercase; font-weight: bold; cursor: pointer; background: #eaeaea; box-shadow: 2px 3px 0px #cfcfcf; }
+.tl-button:after { content: ''; display: inline-block; border: 1px solid; border-color: #eaeaea; }
+.tl-button:hover { color: #eaeaea; box-shadow: 2px 3px 0px #bfbfbf; background: #9b9b9b; }
+.tl-button:hover:after { border-color: #9b9b9b; }
+.tl-button:hover > b { border-color: transparent; }
+.tl-button > b { border-width: 2px; border-style: solid; border-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) transparent rgba(255, 255, 255, 0.3); height: 2px; border-radius: 4px 4px 0 0; }
+
+.tl-theme-pb .tl-button { background: #fafafa; background: -moz-linear-gradient(top, #fafafa 0%, #e6e6e6 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #e6e6e6)); background: -webkit-linear-gradient(top, #fafafa 0%, #e6e6e6 100%); background: -o-linear-gradient(top, #fafafa 0%, #e6e6e6 100%); background: -ms-linear-gradient(top, #fafafa 0%, #e6e6e6 100%); background: linear-gradient(to bottom, #fafafa 0%, #e6e6e6 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fafafa', endColorstr='#e6e6e6',GradientType=0 ); display: block; height: 30px; color: #555; line-height: normal; padding-top: 2px; padding-left: 10px; padding-right: 10px; box-shadow: none; border-radius: 4px; }
+.tl-theme-pb .tl-button:after { border-radius: 4px; border-color: #c2c2c2; }
+.tl-theme-pb .tl-button:hover, .tl-theme-pb .tl-button:active { color: #000; background: #f2f2f2; }
+.tl-theme-pb .tl-button:hover:after, .tl-theme-pb .tl-button:active:after { border-color: #9e9e9e; }
+.tl-theme-pb .tl-button:focus { outline: 0; }
+.tl-theme-pb .tl-button:active { box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2) inset; }
+.tl-theme-pb .tl-button.tl-success, .tl-theme-pb .tl-button.tl-warn, .tl-theme-pb .tl-button.tl-highlight { color: #fafafa; }
+.tl-theme-pb .tl-button.tl-success:after, .tl-theme-pb .tl-button.tl-warn:after, .tl-theme-pb .tl-button.tl-highlight:after { border-color: #464646; }
+.tl-theme-pb .tl-button.tl-success:hover, .tl-theme-pb .tl-button.tl-warn:hover, .tl-theme-pb .tl-button.tl-highlight:hover { color: #f2f2f2; }
+.tl-theme-pb .tl-button.tl-success:hover:after, .tl-theme-pb .tl-button.tl-warn:hover:after, .tl-theme-pb .tl-button.tl-highlight:hover:after { border-color: #2f2f2f; }
+.tl-theme-pb .tl-button.tl-success { background: #5a5a5a; background: -moz-linear-gradient(top, #5a5a5a 0%, #303030 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5a5a5a), color-stop(100%, #303030)); background: -webkit-linear-gradient(top, #5a5a5a 0%, #303030 100%); background: -o-linear-gradient(top, #5a5a5a 0%, #303030 100%); background: -ms-linear-gradient(top, #5a5a5a 0%, #303030 100%); background: linear-gradient(to bottom, #5a5a5a 0%, #303030 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5a5a5a', endColorstr='#303030',GradientType=0 ); }
+.tl-theme-pb .tl-button.tl-success:hover { background: #5a5a5a; }
+.tl-theme-pb .tl-button.tl-warn { background: #e41e26; background: -moz-linear-gradient(top, #e41e26 0%, #c9252c 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e41e26), color-stop(100%, #c9252c)); background: -webkit-linear-gradient(top, #e41e26 0%, #c9252c 100%); background: -o-linear-gradient(top, #e41e26 0%, #c9252c 100%); background: -ms-linear-gradient(top, #e41e26 0%, #c9252c 100%); background: linear-gradient(to bottom, #e41e26 0%, #c9252c 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e41e26', endColorstr='#c9252c',GradientType=0 ); }
+.tl-theme-pb .tl-button.tl-warn:hover { background: #e41e26; }
+.tl-theme-pb .tl-button.tl-highlight { background: #86be40; background: -moz-linear-gradient(top, #86be40 0%, #4b8c40 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #86be40), color-stop(100%, #4b8c40)); background: -webkit-linear-gradient(top, #86be40 0%, #4b8c40 100%); background: -o-linear-gradient(top, #86be40 0%, #4b8c40 100%); background: -ms-linear-gradient(top, #86be40 0%, #4b8c40 100%); background: linear-gradient(to bottom, #86be40 0%, #4b8c40 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86be40', endColorstr='#4b8c40',GradientType=0 ); }
+.tl-theme-pb .tl-button.tl-highlight:hover { background: #86be40; }
+.tl-theme-pb .tl-button.tl-disabled { opacity: .4; cursor: default; color: #9b9b9b; background: #f2f2f2; }
+.tl-theme-pb .tl-button.tl-disabled.tl-success, .tl-theme-pb .tl-button.tl-disabled.tl-warn, .tl-theme-pb .tl-button.tl-disabled.tl-highlight { color: #fafafa; }
+.tl-theme-pb .tl-button.tl-disabled.tl-success { background: #5a5a5a; }
+.tl-theme-pb .tl-button.tl-disabled.tl-warn { background: #e41e26; }
+.tl-theme-pb .tl-button.tl-disabled.tl-highlight { background: #86be40; }
+.tl-theme-pb .tl-button.tl-disabled > b { display: none; }
+.tl-theme-pb .tl-button.tl-disabled:active { box-shadow: none; }
+.tl-theme-pb a.tl-button, .tl-theme-pb div.tl-button { height: 28px; }
+.tl-theme-pb input.tl-button { padding-bottom: 3px; vertical-align: top; border: 1px solid #c2c2c2; }
+.tl-theme-pb input.tl-button:hover { border: 1px solid #9b9b9b; }
+.tl-theme-pb input.tl-button.tl-success, .tl-theme-pb input.tl-button.tl-warn, .tl-theme-pb input.tl-button.tl-highlight { border-color: #464646; }
+.tl-theme-pb input.tl-button.tl-success:hover, .tl-theme-pb input.tl-button.tl-warn:hover, .tl-theme-pb input.tl-button.tl-highlight:hover { border-color: #2f2f2f; }
+
+[class*="tl-group"] fieldset, [class~=" tl-group"] fieldset { margin: 0; padding: 0; border: 0; }
+[class*="tl-group"] .tl-button, [class~=" tl-group"] .tl-button { width: 100%; border-radius: 0; }
+[class*="tl-group"] .tl-button > b, [class~=" tl-group"] .tl-button > b { border-radius: 0; height: 0; }
+[class*="tl-group"] .tl-button:after, [class~=" tl-group"] .tl-button:after { border-radius: 0; }
+[class*="tl-group"] .tl-button:first-child, [class*="tl-group"] .tl-button:first-child:after, [class~=" tl-group"] .tl-button:first-child, [class~=" tl-group"] .tl-button:first-child:after { border-radius: 4px 0 0 4px; }
+[class*="tl-group"] .tl-button:last-child, [class*="tl-group"] .tl-button:last-child:after, [class~=" tl-group"] .tl-button:last-child, [class~=" tl-group"] .tl-button:last-child:after { border-radius: 0 4px 4px 0; }
+[class*="tl-group"].tl-theme-pb .tl-button, [class~=" tl-group"].tl-theme-pb .tl-button { float: left; width: auto; }
+
+.tl-group-button-buttonxl.tl-theme-pb fieldset .tl-button, .tl-group-buttonxl-button.tl-theme-pb fieldset .tl-button { margin-left: 0; float: none; width: 100%; }
+
+.tl-group-buttonxl-button .tl-button:first-child { float: right; }
+.tl-group-buttonxl-button .tl-button:first-child, .tl-group-buttonxl-button .tl-button:first-child:after { border-radius: 0 4px 4px 0; }
+.tl-group-buttonxl-button .tl-button:last-child, .tl-group-buttonxl-button .tl-button:last-child:after { border-radius: 4px 0 0 4px; }
+
+.tl-group-button-input .tl-button:first-child, .tl-group-input-button .tl-button:first-child { float: left; border-radius: 4px 0 0 4px; }
+.tl-group-button-input .tl-button:first-child:after, .tl-group-input-button .tl-button:first-child:after { border-radius: 4px 0 0 4px; }
+.tl-group-button-input .tl-button:first-child + fieldset [type*="text"], .tl-group-button-input .tl-button:first-child + fieldset [type~=" text"], .tl-group-input-button .tl-button:first-child + fieldset [type*="text"], .tl-group-input-button .tl-button:first-child + fieldset [type~=" text"] { border-radius: 0 4px 4px 0; }
+.tl-group-button-input fieldset [type*="text"], .tl-group-button-input fieldset [type~=" text"], .tl-group-input-button fieldset [type*="text"], .tl-group-input-button fieldset [type~=" text"] { float: left; border-radius: 4px; border: 1px solid; border-color: #c7c6c6; position: relative; z-index: 1; overflow: hidden; display: block; width: 100%; height: 2.5em; margin: 0; padding: 0 8px; font-size: 75%; line-height: 1.4em; outline: none; text-overflow: ellipsis; white-space: nowrap; color: #525252; background: white; vertical-align: middle; box-shadow: none; }
+
+.tl-group-input-button .tl-button:first-child { float: right; border-radius: 0 4px 4px 0; }
+.tl-group-input-button .tl-button:first-child:after { border-radius: 0 4px 4px 0; }
+.tl-group-input-button .tl-button:first-child + fieldset [type*="text"], .tl-group-input-button .tl-button:first-child + fieldset [type~=" text"] { border-radius: 4px 0 0 4px; }
+
+.tl-input-box { font-family: Comic Sans MS, Verdana, Arial, Helvetica; font-size: 12px; -webkit-transition: 0.15s ease-in-out; -moz-transition: 0.15s ease-in-out; -ms-transition: 0.15s ease-in-out; -o-transition: 0.15s ease-in-out; transition: 0.15s ease-in-out; width: 100%; box-sizing: border-box; height: 30px; padding-left: 10px; padding-right: 10px; border: 0; border: 1px solid #c7c6c6; }
+.tl-input-box:focus { border: 1px solid #a09f9f; outline: none; }
+.tl-input-box:first-child { padding-left: 10px; }
+
+.tl-form { font-family: Comic Sans MS, Verdana, Arial, Helvetica; font-size: 14px; }
+.tl-form .tl-icon { position: static; }
+.tl-form fieldset { position: relative; }
+.tl-form fieldset .tl-icon { position: absolute; top: 50%; left: 15px; display: block; margin-top: -8px; margin-left: -7px; }
+
+.tl-input-box.tl-disabled, .tl-input-box [disabled] { opacity: .4; cursor: default; color: #9b9b9b; background: #f2f2f2; }
+
+/* KIT - GIZMO-PUBLIC - ABC ORDER */
+/* SOURCES - ABC ORDER */
+.sources-html { content: '\a<form class="tl-form">\a \a 	<div class="tl-input-container tl-input-search">\a 		\a 		<label for="fm-name">Zoeken:<span class="tl-form-mark">verplicht veld!</span></label>\a \a 		<div class="tl-input"><i></i><ins>*</ins>\a 			<input id="fm-name" class="tl-ellipsis" type="text" placeholder="ZOEKEN..." />\a 		</div>\a 		\a 	</div>\a \a 	<div class="tl-input-container tl-form-validate tl-form-error tl-form-active">\a 		\a 		<label for="fm-name">Naam:<span class="tl-form-mark">verplicht veld!</span></label>\a \a 		<div class="tl-input"><i></i><ins>*</ins>\a 			<input id="fm-name" class="tl-ellipsis" type="text" placeholder="kwef wefh khwuef khwefk uhwefh uiweghpreh kjxdhgkaevrhkihae" />\a 		</div>\a 		\a 	</div>\a \a 	<div class="tl-input-container tl-form-validate">\a 		\a 		<label for="fm-email">E-mailadres:<span class="tl-form-mark">verplicht veld!</span></label>\a \a 		<div class="tl-input"><i></i><ins>*</ins>\a 			<input id="fm-email" class="tl-ellipsis" type="text" placeholder="Uw e-mailadres..." />\a 		</div>\a 		\a 	</div>\a \a 	<div class="tl-input-container">\a 		\a 		<label for="fm-phonenumber">Telefoonnummer:<span class="tl-form-mark">verplicht veld!</span></label>\a \a 		<div class="tl-input"><i></i><ins>*</ins>\a 			<input id="fm-phonenumber" class="tl-ellipsis" type="text" placeholder="Uw telefoonnummer..." />\a 		</div>\a 		\a 	</div>\a \a 	<div class="tl-input-container tl-form-validate">\a 		\a 		<label for="fm-message">Bericht:<span class="tl-form-mark">verplicht veld!</span></label>\a \a 		<div class="tl-input"><i></i><ins>*</ins>\a 			<textarea id="fm-message" class="tl-ellipsis" placeholder="Uw bericht..."></textarea>\a 		</div>\a 		\a 	</div>\a \a 	<label for="tl-input-file">Bijlage:<!-- <span class="tl-form-mark">verplicht veld!</span> --></label>\a \a 	<div class="tl-input-container tl-input-file">\a 		\a 		<div class="tl-input"><i></i><ins>*</ins>\a 			<input type="file" onchange="getElementById("tl-input-file").value = getElementById(" tl-input-file-hidden ").value;" id="tl-input-file-hidden" size="1000" />\a 			<input type="text" id="tl-input-file" />\a 			<a class="tl-form-button-browse" href="#"><span>Bladeren</span></a>\a 		</div>\a \a 	</div>\a \a 	<div class="tl-row tl-form-captcha tl-form-validate tl-form-error tl-mb10">\a \a 		<div class="tl-size6of12 tl-relative">\a \a 			<label for="fm-captcha">Veiligheidscode:</label>\a \a 			<img src="" alt="captcha" />\a \a 		</div>\a \a 		<div class="tl-size6of12 tl-push6">\a \a 			<div class="tl-input-container">\a 				\a 				<span class="tl-form-label">&nbsp;<span class="tl-form-mark">verplicht veld!</span></span>\a \a 				<div class="tl-input"><i></i><ins>*</ins>\a 					<input id="fm-captcha" class="tl-ellipsis" type="text" maxlength="6" placeholder="Code overnemen..." />\a 				</div>\a 				\a 			</div>\a \a 		</div>\a \a 	</div>\a \a</form>\a 	'; }
+
+/*# sourceMappingURL=import-pbforms.css.map */
