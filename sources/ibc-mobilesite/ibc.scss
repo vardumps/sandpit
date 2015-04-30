@@ -1,0 +1,407 @@
+$negScaleObject: 0.7114583333;
+.tl-scaling-transform {
+
+	$negScale: 0.7114583333;
+
+	-webkit-transform: scale($negScale,$negScale);
+	-ms-transform: scale($negScale,$negScale);
+	transform: scale($negScale,$negScale);
+}
+
+%tl-font-arial {
+	font-family: 'Arial';
+}
+%tl-font-innerstate {
+	font-family: 'Interstate-Regular';
+}
+%tl-vertical-middle {
+
+	&:before {
+		content: '';
+		position: relative;
+		display: inline-block;
+		height: 105%;
+		vertical-align: middle;
+	}
+}
+%tl-ellipsis {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+%tl-no-marginpadding {
+	margin: 0;
+	padding: 0;
+}
+%tl-position {
+	@include tl-position;
+}
+#tl-ibc-mobilesite {
+	@extend .tl-scaling-transform;
+	@extend %tl-font-arial;
+
+	h1, h2 {
+		margin: 0 0 0 0;
+	}
+	p {
+		@extend %tl-font-arial;
+	}
+	nav {
+		background: #bd0f10;
+	}
+	header {
+
+		@include tl-gradient(#333333, #000000);
+
+		position: relative;
+		height: 250px;
+		// padding-top: 72px;
+		text-align: center;
+		color: #fff;
+
+		> .tl-brand {
+
+			position: absolute;
+			left: 50%;
+			bottom: 40px;
+			margin-left: -107px;
+		}
+	}
+	footer {
+
+		@extend %tl-position-stretched;
+		top: auto;
+		bottom: 0;
+		display: block;
+		height: 150px;
+		border-top: 3px solid #707070;
+		color: #fff;
+		font-size: 80px;
+		background: #202020;
+
+		> i {
+			position: absolute;
+			top: 37px;
+			left: 27px;
+			display: block;
+			width: 85px;
+			height: 63px;
+			color: #aaaaaa;
+			margin-top: 2px;
+			background: url('images/ibc-mobilesite/ibc-demo-mobile-v4_28.png');
+		}
+		> input[type="text"] {
+			position: absolute;
+			top: 26px;
+			left: 137px;
+			width: 758px;
+			height: 96px;
+			border-radius: 16px;
+			color: #fff;
+			border: 0;
+			font-size: 57px;
+			background: #707070;
+
+			&:focus {
+				background: #707070;
+			}
+			&::-webkit-input-placeholder { color: #303030; }
+			&:-moz-placeholder { color: #303030; opacity: 1; }
+			&::-moz-placeholder { color: #303030; opacity: 1; }
+			&:-ms-input-placeholder { color: #303030; }			
+		}
+		> button,
+		> button:hover {
+			position: absolute;
+			top: 27px;
+			right: 30px;
+			font-size: 58px;
+			line-height: 96px;
+			text-transform: capitalize;
+			color: #aaaaaa;
+			border: 0;
+			padding: 0;
+			background: none;
+		}
+	}//footer
+	.tl-wrapper {
+		overflow: hidden;
+		width: 1080px;
+		height: 1920px;
+		border: 1px solid #000;
+		margin-bottom: 40px;
+		// opacity: 0.2;
+		background: #202020;
+
+		position: absolute;
+		// top: -189px;
+		// left: -366px;
+
+		// top: -126px;
+		// left: -356px;		
+
+		top: 0;
+		// left: -402px;
+	}
+}
+html #tl-ibc-mobilesite {
+	position: absolute;
+	left: 50%;
+	$posWidth: (1080 * $negScaleObject) / 2;
+	margin-left: -#{$posWidth}px;
+}
+
+
+.tl-drawer {
+	// @include tl-position(50%,0,0,0);
+	// margin-top: -30px;
+	@include tl-position;
+
+	display: inline-block;
+	width: 65px;
+	height: 58px;
+
+	&.tl-handle {
+
+		top: auto;
+		bottom: 56px;
+		left: 58px;
+
+		> i {
+			@extend %tl-position;
+			overflow: visible;
+			display: block;
+			border-top: 10px solid #fff;
+
+			&:before, &:after {
+				@extend %tl-position;
+				content: '';
+				display: block;
+				top: 50%;
+				height: 10px;
+				margin-top: -10px;
+				background: #fff;
+			}
+			&:after {
+				top: auto;
+				bottom: 0;
+				height: 10px;
+				margin-top: auto;
+				background: #fff;
+			}
+		}
+	}//.tl-handle
+}//.tl-drawer
+.tl-clock {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 72px;
+
+	> time {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 186px;
+		margin-left: -93px;
+		margin-top: -10px;
+		font-weight: bold;
+		font-size: 42px;
+		color: #ffffff;
+	}
+}//.tl-clock
+.tl-player-audio {
+
+	@include tl-gradient(#404040, #111111);
+	@include tl-position(auto, 0, 150px, 0);
+	@include tl-chart-pie(82px);
+
+	display: block;
+	height: 256px;
+	border-top: 3px solid #707070;
+	border-bottom: 3px solid #000000;
+
+	.tl-button-share {
+		@extend %tl-position-stretched;
+		right: 0;
+		left: auto;
+		width: 202px;
+		border-left: 3px solid #707070;
+
+		> i {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -45px;
+			margin-left: -40px;
+			display: block;
+			width: 80px;
+			height: 90px;
+			background: url('images/ibc-mobilesite/ibc-demo-mobile-v4_11.png') no-repeat center center;
+		}
+	}
+	.tl-chart-pie {
+
+		position: absolute;
+		top: 40px;
+		left: 70px;
+
+		.tl-chart-innermask {
+			
+			.tl-chart-image {
+				width: 120.36px;
+				height: 120.36px;
+				margin-left: -59.58px;
+				margin-top: -59.58px;
+				background: #202020;
+
+				> i {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					font-size: 70px;
+					color: #000;
+					margin-top: -27px;
+					margin-left: -21px;
+					display: block;
+					width: 42px;
+					height: 54px;
+					background: url('images/ibc-mobilesite/ibc-demo-mobile-v4_14.png') no-repeat center center;
+				}
+			}
+		}
+	}//.tl-chart-pie
+	.tl-player-text {
+
+		@extend %tl-position-stretched;
+		top: -3px;
+		right: 202px;
+		// left: 278px;
+		left: 308px;
+		padding-top: 43px;
+		border-right: 3px solid #000;
+
+		h2, span, time {
+			@extend %tl-ellipsis;
+			display: block;
+			line-height: 55px;
+		}
+		h2 {
+			color: #fff;
+			font-size: 48px;
+			font-family: 'Interstate-Regular';
+		}
+		span, time {
+			color: #aaaaaa;
+			font-size: 44px;
+		}
+	}//.tl-player-text
+}//.tl-player-audio
+
+.tl-player-currentprogramme {
+	@include tl-gradient(#646464, #373737);
+	@include tl-position(auto, 0, 406px, 0);
+	
+	border-top: 3px solid #707070;
+	border-bottom: 2px solid #000000;
+	height: 80px;
+	padding: 4px 10px 0 304px;
+
+	h2 {
+		@extend %tl-ellipsis;
+		font-size: 48px;
+		font-family: 'Interstate-Regular';
+		color: #fff;
+		> span {
+			font-family: 'Arial';
+			color: #aaaaaa;
+		}
+	}
+	time {
+		position: absolute;
+		// top: 24px;
+		top: 50%;
+		left: 30px;
+		margin-top: -11px;
+		font-size: 44px;
+		font-family: 'Arial';
+		color: #aaaaaa;
+	}
+}//.tl-player-currentprogramme
+
+.tl-themebox {
+
+	&.tl-ibc-mobilesite {
+
+		@include tl-position(250px,-16px,455px,0);
+		overflow: auto;
+
+		.tl-themebox-body {
+
+			@extend %tl-position;
+
+			li {
+			
+				// height: 324px;
+				height: 328px;
+				border-bottom: 3px solid #e3e3e3;
+
+				.tl-themebox-body-contain {
+					left: 412px;
+					padding-top: 75px;
+
+					> h2 {
+						font-size: 54px;
+						line-height: 64px;
+					}
+					> p, > time {
+						font-size: 42px;
+						line-height: 54px;
+					}
+				}
+			}
+		}//.tl-themebox-body
+	}//.tl-mobilesite
+}//.tl-themebox
+
+@keyframes scale-wobble {
+	0% {
+		-webkit-transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-ms-transform: scale(1,1);
+		-o-transform: scale(1,1);
+		transform: scale(1,1);
+	}
+	50% {
+
+		-webkit-transform: scale(1.3,1.3);
+		-moz-transform: scale(1.3,1.3);
+		-ms-transform: scale(1.3,1.3);
+		-o-transform: scale(1.3,1.3);
+		transform: scale(1.3,1.3);
+	}
+	100% {
+
+		-webkit-transform: scale(1,1);
+		-moz-transform: scale(1,1);
+		-ms-transform: scale(1,1);
+		-o-transform: scale(1,1);
+		transform: scale(1,1);
+	}
+}
+.tl-trigger-play,
+.tl-trigger-play:hover {
+	position: absolute;
+	// bottom: 20px;
+	// left: 230px;
+
+	bottom: 10px;
+	left: 237px;
+
+	font-size: 80px;
+	color: rgba(255,255,255,0.6);
+
+	@include tl-vendor-prefix('animation', 'scale-wobble 3s infinite linear');
+}

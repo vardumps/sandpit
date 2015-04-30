@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<!-- doc -->
+	<title>animations</title>
+
+	<!-- meta -->
+	<!-- enc -->
+	<meta charset="utf-8">
+
+	<!-- ua -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="keywords" content="" />
+	<!-- /meta -->
+
+	<!-- link -->
+	<!-- favicon -->
+	
+	<link rel="icon" type="image/x-icon" href="../../sandpit-favicon.ico" />
+	<link rel="SHORTCUT ICON" href="../../sandpit-favicon.ico"/>
+
+	<!-- /link -->
+
+	<!-- css -->
+	<link rel="stylesheet" href="animations.css" />
+	<!-- css -->
+
+	<!-- js -->
+	<!-- /js -->
+
+	<!-- /doc -->
+
+</head>
+<body>
+
+
+<a href="#" id="openPrimaryNav">open</a>
+<a href="#" id="closePrimaryNav">close</a>
+
+<div id="primaryNav" class="ch-wrapper">
+	
+
+	<div class="ch-box ch-screen2">
+		
+		<div class="ch-nowplaying">
+			kwhf uwekhf hkuwefhkuwe fkuhew khufewkuhfkweufkhuewkhuewfh kuewfhuk wehuf kwhf uwekhf hkuwefhkuwe fkuhew khufewkuhfkweufkhuewkhuewfh kuewfhuk wehuf kwhf uwekhf hkuwefhkuwe fkuhew khufewkuhfkweufkhuewkhuewfh kuewfhuk wehuf 
+			<div class="ch-nowplaying-skin"></div>
+			
+			<span>nowplaying</span>
+			<div class="ch-nowplaying-body">
+				
+				<img src="http://placehold.it/130x130" alt="">
+				<fieldset>
+					<h2>Werkstuk Groep 4</h2>
+					<p>Klassiekale les week 36 met Eilco</p>
+					<time>12:20 / 15:40</time>
+				</fieldset>
+
+			</div>
+
+			<i style="clear: both"></i>
+
+		</div>
+
+	</div><!-- ch-box -->
+
+
+</div>
+
+
+
+<script>
+window.onload = init;
+function init()
+{
+    document.getElementById('openPrimaryNav').onclick   = openPrimaryNav;
+    document.getElementById('closePrimaryNav').onclick  = closePrimaryNav;
+}
+
+function openPrimaryNav()
+{
+    document.getElementById('primaryNav').setAttribute('class','container open');
+}
+
+function closePrimaryNav()
+{
+    document.getElementById('primaryNav').setAttribute('class','container ');
+}
+</script>
+
+</body>
+</html>

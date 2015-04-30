@@ -1,0 +1,117 @@
+// LAYOUT <-- needs cleanup
+.tl-toggle-button {
+
+	@include tl-fontset($comicsans,12px);
+	@extend %tl-noselect;
+
+	position: relative;
+	z-index: 1;
+	display: block;
+
+	&.tl-radio {
+
+		.tl-toggle-option {
+
+			@extend %tl-noselect;
+
+			&:focus + .tl-toggle-button-label {
+				background: blue;
+			}
+			&:checked + .tl-toggle-button-label {
+				background: red;
+			}
+			&:focus {
+				&:checked + .tl-toggle-button-label {
+					background: green;
+				}
+			}
+		}
+	}
+}//.tl-toggle
+
+// MODULE
+.tl-toggle-button-label {
+	
+	@extend %tl-noselect;
+	@extend %tl-vertical-middle;
+	position: relative;
+	float: left;
+	height: 40px;
+	margin: 0;
+	padding: 0 5px;
+	border-radius: 0;
+	cursor: pointer;
+	color: #fff;
+	// border-radius: 4px;
+	background: gray;
+
+	&:hover {
+		opacity: 0.7;
+		background: #000;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		display: block;
+		height: 4px;
+		opacity: .5;
+		border-radius: 4px;
+		background: rgba(0,0,0,0.5);
+	}
+	&:first-of-type {
+		border-radius: 4px 0 0 4px;
+	}
+	&:last-of-type {
+		border-radius: 0 4px 4px 0;	
+	}
+}
+.tl-toggle-option {
+
+	@extend %tl-noselect;
+
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+
+	&:focus + .tl-toggle-button-label {
+		background: blue;
+	}
+	&:checked + .tl-toggle-button-label {
+		background: red;
+	}
+	&:focus {
+		&:checked + .tl-toggle-button-label {
+			background: green;
+		}
+	}
+}
+
+// <div class="tl-toggle-button tl-group">
+// 	<input id="aliens-c" type="checkbox" name="toggle" class="tl-toggle-option" value="aliens" />
+// 	<label class="tl-toggle-button-label " for="aliens-c">Aliens</label>
+
+// 	<input id="ghosts-c" type="checkbox" name="toggle" class="tl-toggle-option" value="ghosts" />
+// 	<label class="tl-toggle-button-label " for="ghosts-c">Ghosts</label>
+
+// 	<input id="monsters-c" type="checkbox" name="toggle" class="tl-toggle-option" value="monsters" />
+// 	<label class="tl-toggle-button-label " for="monsters-c">Monsters</label>
+// </div>
+
+// <div class="tl-toggle-button tl-radio">
+// 	<input id="aliens-r" type="radio" name="toggle" class="tl-toggle-option" value="aliens" />
+// 	<label class="tl-toggle-button-label " for="aliens-r">Aliens</label>
+
+// 	<input id="ghosts-r" type="radio" name="toggle" class="tl-toggle-option" value="ghosts" />
+// 	<label class="tl-toggle-button-label " for="ghosts-r">Ghosts</label>
+
+// 	<input id="monsters-r" type="radio" name="toggle" class="tl-toggle-option" value="monsters" />
+// 	<label class="tl-toggle-button-label " for="monsters-r">Monsters</label>
+// </div>

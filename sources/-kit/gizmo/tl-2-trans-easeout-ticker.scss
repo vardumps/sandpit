@@ -1,0 +1,64 @@
+.tl-tran-ease-out-sine {
+
+	@include tl-vendor-prefix("transition", "all 500ms cubic-bezier(0.390, 0.575, 0.565, 1.000)");
+	@include tl-vendor-prefix("transition-timing-function", "cubic-bezier(0.390, 0.575, 0.565, 1.000)");
+}
+
+
+.bl-ticker-visual {
+	font-size: 60px;
+	position: relative;
+	height: 80px;
+	line-height: 80px;
+	opacity: .9;
+}
+.bl-ticker-visual .green {
+
+	@include tl-vendor-prefix("transition", "all 1000ms cubic-bezier(0.390, 0.575, 0.000, 0.995)");
+	@include tl-vendor-prefix("transition-timing-function", "cubic-bezier(0.390, 0.575, 0.000, 0.995)");
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 80px;
+	line-height: 80px;
+	background: #86be40;
+}
+.bl-ticker-visual:hover .green {
+	width: 100%;
+
+}
+.bl-ticker-visual > p {
+	
+	@include tl-vendor-prefix("transition", "all 1000ms cubic-bezier(0.390, 0.575, 0.000, 0.995)");
+	@include tl-vendor-prefix("transition-timing-function", "cubic-bezier(0.390, 0.575, 0.000, 0.995)");
+
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 0;
+	margin: 0;
+	color: #ffffff;
+	white-space: nowrap;
+}
+
+.test {
+	@include tl-vendor-prefix("e", "ew");
+}
+.bl-ticker-visual:hover > p {
+	left: 0;
+	opacity: 1;
+}
+
+
+// <div class="bl-ticker-visual rollout">
+
+// 	<div class="green">
+// 		bl-ticker-visual
+// 	</div>
+// 	<p>
+// 	</p>
+
+// </div>

@@ -1,0 +1,127 @@
+@-webkit-keyframes blue { 0% { background: blue; } 100% { background: lightblue; } }
+@-webkit-keyframes red { 0% { background: lightblue; } 100% { background: red; } }
+@-webkit-keyframes green { 0% { background: red; } 100% { background: lightgreen; } }
+
+@-webkit-keyframes sickie3 {
+	0% {
+		top: 100px;
+		left: 0;
+	}
+	50% {
+		top: 100px;
+		left: 300px;
+	}
+	100% {
+		top: 100px;
+		left: 0;
+	}
+}
+@-webkit-keyframes sickie2 {
+	0% {
+		left: 0;
+	}
+	50% {
+		left: 300px;
+	}
+	100% {
+		left: 0;
+	}
+}
+@-webkit-keyframes sickie {
+	0% {
+		top: 200px;
+	}
+	50% {
+		top: 300px;
+	}
+	100% {
+		top: 200px;
+	}
+}
+.container {
+	position: absolute;
+	top: 300px;
+	left: 300px;
+	display: block;
+	width: 300px;
+	height:50px;
+	background: red;
+	color: #fff;
+
+	&.open {
+
+		-webkit-animation: 
+			blue 5s 1,
+			red 5s 1,
+			green 5s 1;
+		-webkit-animation-delay: 
+			0s,
+			5s,
+			10s;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <a href="#" id="openPrimaryNav">open</a>
+// <a href="#" id="closePrimaryNav">close</a>
+
+// <div id="subject" class="container">
+// dwlij jliew
+// </div>
+
+
+// <script>
+// window.onload = init;
+// function init()
+// {
+//     document.getElementById('openPrimaryNav').onclick   = openPrimaryNav;
+//     document.getElementById('closePrimaryNav').onclick  = closePrimaryNav;
+// }
+
+// function openPrimaryNav()
+// {
+//     document.getElementById('subject').setAttribute('class','container open');
+// }
+
+// function closePrimaryNav()
+// {
+//     document.getElementById('subject').setAttribute('class','container ');
+// }
+// </script>
+
+
+
+
+
+
+
+
+
+
+
+
+

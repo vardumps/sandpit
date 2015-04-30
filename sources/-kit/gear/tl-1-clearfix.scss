@@ -1,0 +1,14 @@
+.tl-clearfix:after {
+	visibility: hidden;
+	display: block!important;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0
+}
+* html body .tl-clearfix {
+	zoom: 0;
+}
+*:first-child+html body .tl-clearfix {
+	zoom: 0;
+}

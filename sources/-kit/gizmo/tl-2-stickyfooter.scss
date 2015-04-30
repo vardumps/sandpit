@@ -1,0 +1,66 @@
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.tl-stack,
+.tl-stack .tl-stack-inner,
+.tl-stickyfooter,
+.tl-stickyfooter .tl-stickyfooter-inner {
+	width: 100%;
+}
+
+.tl-stack {
+
+	@include tl-support-comment;
+	height:auto !important;
+	margin:0 0 -50px;
+	min-height:100%;
+
+	.tl-stack-inner {
+		padding: 0 0 50px;
+
+		> div {
+
+			@include tl-gradient(#f7e9f6, #e0c6dd);
+			height: 100px;
+			// merely for demo purposes
+		}
+	}
+}
+.tl-stickyfooter {
+
+	@include tl-support-comment;
+	font-size: 2em;
+	text-align: center;
+	color: #fff;
+	background: #B943AC;
+
+	.tl-stickyfooter-inner {
+		height: 50px;
+	}
+}
+
+// tl-stack && tl-stickyfooter
+
+// <div class="tl-stack">
+	
+// 	<div class="tl-stack-inner">
+		
+// 		<div>stacked content for footer</div>
+// 		<div>stacked content for footer</div>
+// 		<div>stacked content for footer</div>
+// 		<div>stacked content for footer</div>
+
+// 	</div>
+
+// </div>
+
+// <div class="tl-stickyfooter">
+	
+// 	<div class="tl-stickyfooter-inner"> stickyfooter<sup>use (bl-)stack for pushing content downwards</sup></div>
+
+// </div>

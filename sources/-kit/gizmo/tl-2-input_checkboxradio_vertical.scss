@@ -1,0 +1,125 @@
+[class*="tl-input-checkbox-v"],
+[class~=" tl-input-checkbox-v"],
+[class*="tl-input-radio-v"],
+[class~=" tl-input-radio-v"] {
+	
+	[type="checkbox"]+label, 
+	[type="radio"]+label {
+
+		&:before {
+			width: auto;
+			display: block;
+			margin-right: auto;
+			text-align: center;
+		}
+	}
+}
+[class*="tl-input-checkbox-vtop"],
+[class~=" tl-input-checkbox-vtop"],
+[class*="tl-input-radio-vtop"],
+[class~=" tl-input-radio-vtop"] {
+	
+	[type="checkbox"]+label, 
+	[type="radio"]+label {
+
+		&:before {
+			display: none;
+		}
+		&:after {
+
+			font-size: 18px;
+			vertical-align: middle;
+
+			width: auto;
+			display: block;
+			margin-right: auto;
+			text-align: center;
+		}
+	}
+	[type="checkbox"] + label:after { content: "\f096"; }
+	[type="checkbox"]:checked + label:after { content: "\f046"; }
+	[type="radio"] + label:after { content: "\f10c"; }
+	[type="radio"]:checked + label:after { content: "\f192"; }
+}
+
+// tl-input-checkbox / radio - tl-input-checkbox-vtop / bottom
+
+// <form class="tl-form demo" style="width: 500px;">
+// 	<input class="tl-input-box tl-large" type="text" />
+// 	<label class="tl-input-label" for="">name</label>
+// 	<input class="tl-input-box tl-disabled" type="text" disabled/>
+// 	<label class="tl-input-label" for="">name</label>
+// </form>
+// <div class="tl-input-checkbox">
+// 	<input id="checkbox-a" type="checkbox">
+// 	<label class="fa" for="checkbox-a">aliens</label>
+// 	<input id="checkbox-b" type="checkbox">
+// 	<label class="fa" for="checkbox-b">ghosts</label>
+// 	<input id="checkbox-c" type="checkbox">
+// 	<label class="fa" for="checkbox-c">monsters</label>
+// </div>
+// <div class="tl-input-checkbox tl-disabled">
+// 	<input id="checkbox-d" type="checkbox" checked>
+// 	<label class="fa" for="checkbox-d">aliens</label>
+// 	<input id="checkbox-e" type="checkbox">
+// 	<label class="fa" for="checkbox-e">ghosts</label>
+// 	<input id="checkbox-f" type="checkbox">
+// 	<label class="fa" for="checkbox-f">monsters</label>
+// </div>
+
+// <div style="clear: both; height: 40px;"></div>
+
+// <div class="tl-input-radio">
+// 	<input id="radio-a" type="radio" name="radiobuttons">
+// 	<label class="fa" for="radio-a">aliens</label>
+// 	<input id="radio-b" type="radio" name="radiobuttons" checked>
+// 	<label class="fa" for="radio-b">ghosts</label>
+// 	<input id="radio-c" type="radio" name="radiobuttons">
+// 	<label class="fa" for="radio-c">monsters</label>
+// </div>
+// <div class="tl-input-radio tl-disabled">
+// 	<input id="radio-a" type="radio" name="radiobuttons">
+// 	<label class="fa" for="radio-a">aliens</label>
+// 	<input id="radio-b" type="radio" name="radiobuttons" checked>
+// 	<label class="fa" for="radio-b">ghosts</label>
+// 	<input id="radio-c" type="radio" name="radiobuttons">
+// 	<label class="fa" for="radio-c">monsters</label>
+// </div>
+
+// <div style="clear: both; height: 40px;"></div>
+
+// <div class="tl-input-checkbox tl-input-checkbox-vtop">
+// 	<input id="checkbox-g" type="checkbox" checked>
+// 	<label class="fa" for="checkbox-g">aliens</label>
+// 	<input id="checkbox-h" type="checkbox">
+// 	<label class="fa" for="checkbox-h">ghosts</label>
+// 	<input id="checkbox-i" type="checkbox">
+// 	<label class="fa" for="checkbox-i">monsters</label>
+// </div>
+// <div class="tl-input-checkbox tl-input-checkbox-vbottom tl-disabled">
+// 	<input id="checkbox-j" type="checkbox"disabled checked>
+// 	<label class="fa" for="checkbox-j">aliens</label>
+// 	<input id="checkbox-k" type="checkbox">
+// 	<label class="fa" for="checkbox-k">ghosts</label>
+// 	<input id="checkbox-l" type="checkbox">
+// 	<label class="fa" for="checkbox-l">monsters</label>
+// </div>
+
+// <div style="clear: both; height: 40px;"></div>
+
+// <div class="tl-input-radio tl-input-radio-vtop">
+// 	<input id="radio-d" type="radio" name="radiobuttons">
+// 	<label class="fa" for="radio-d">aliens</label>
+// 	<input id="radio-e" type="radio" name="radiobuttons" checked>
+// 	<label class="fa" for="radio-e">ghosts</label>
+// 	<input id="radio-f" type="radio" name="radiobuttons">
+// 	<label class="fa" for="radio-f">monsters</label>
+// </div>
+// <div class="tl-input-radio tl-input-radio-vbottom tl-disabled">
+// 	<input id="radio-g" type="radio" name="radiobuttons2">
+// 	<label class="fa" for="radio-g">aliens</label>
+// 	<input id="radio-h" type="radio" name="radiobuttons2" checked>
+// 	<label class="fa" for="radio-h">ghosts</label>
+// 	<input id="radio-i" type="radio" name="radiobuttons2">
+// 	<label class="fa" for="radio-i">monsters</label>
+// </div>

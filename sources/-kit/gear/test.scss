@@ -1,0 +1,30 @@
+@mixin tl-vendor-prefix ( $vendor-prefix-action, $vendor-prefix-property, $vendor-prefix-value ) {
+
+	$prefix-list: 
+		-webkit-,
+		-moz-, 
+		-ms-,
+		-o-;
+
+	@each $prefix in $prefix-list {
+		#{$prefix}#{$vendor-prefix-property}: '#{$vendor-prefix-value}';
+	}
+	#{$vendor-prefix-property}: '#{$vendor-prefix-value}';
+}
+@mixin testaa ($blob: "padding", $blep: "5px") {
+	#{$blob}: #{$blep};
+}
+
+@mixin aap ($aap) {
+	content: '$aap';
+}
+
+@mixin beer ($beer) {
+	content: ' $beer';
+}
+
+.testgeer {
+	display: block;
+	@include tl-vendor-prefix (pushforward, padding, 5px);
+}
+

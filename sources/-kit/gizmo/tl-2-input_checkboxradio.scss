@@ -1,0 +1,79 @@
+.tl-input-checkbox,
+.tl-input-radio {
+
+	[type="checkbox"],
+	[type="radio"] {
+
+		display: none;
+		
+		& + label {
+
+			@include tl-fontset($comicsans,14px);
+			@extend %tl-noselect;
+			cursor: pointer;
+
+			&:before, 
+			&:after {
+				font-family: 'FontAwesome';
+			}
+			&:before {
+				
+				font-size: 18px;
+				vertical-align: middle;
+				margin-right: 5px;
+			}
+		}
+	}
+	[type="checkbox"] + label:before { content: "\f096"; width: 15px; display: inline-block;}
+	[type="checkbox"]:checked + label:before { content: "\f046"; }
+	[type="radio"] + label:before { content: "\f10c"; }
+	[type="radio"]:checked + label:before { content: "\f192"; }
+
+	&.tl-disabled {
+
+		opacity: .3;
+
+		[type="checkbox"] + label,
+		[type="radio"] + label {
+			cursor: default;
+		}
+		[type="checkbox"]:checked + label:before { content: "\f096"; }
+		[type="radio"]:checked + label:before { content: "\f10c"; }
+	}
+}
+
+// tl-input-checkbox || tl-input-radio
+
+// <div class="tl-input-checkbox">
+// 	<input id="checkbox-a" type="checkbox" checked>
+// 	<label class="fa" for="checkbox-a">aaaap</label>
+// 	<input id="checkbox-b" type="checkbox">
+// 	<label class="fa" for="checkbox-b">aaaap</label>
+// 	<input id="checkbox-c" type="checkbox">
+// 	<label class="fa" for="checkbox-c">aaaap</label>
+// </div>
+// <div class="tl-input-checkbox tl-disabled">
+// 	<input id="checkbox-a" type="checkbox" checked>
+// 	<label class="fa" for="checkbox-a">aaaap</label>
+// 	<input id="checkbox-b" type="checkbox">
+// 	<label class="fa" for="checkbox-b">aaaap</label>
+// 	<input id="checkbox-c" type="checkbox">
+// 	<label class="fa" for="checkbox-c">aaaap</label>
+// </div>
+
+// <div class="tl-input-radio">
+// 	<input id="radio-a" type="radio" name="radiobuttons">
+// 	<label class="fa" for="radio-a">aaaap</label>
+// 	<input id="radio-b" type="radio" name="radiobuttons" checked>
+// 	<label class="fa" for="radio-b">aaaap</label>
+// 	<input id="radio-c" type="radio" name="radiobuttons">
+// 	<label class="fa" for="radio-c">aaaap</label>
+// </div>
+// <div class="tl-input-radio tl-disabled">
+// 	<input id="radio-a" type="radio" name="radiobuttons">
+// 	<label class="fa" for="radio-a">aaaap</label>
+// 	<input id="radio-b" type="radio" name="radiobuttons" checked>
+// 	<label class="fa" for="radio-b">aaaap</label>
+// 	<input id="radio-c" type="radio" name="radiobuttons">
+// 	<label class="fa" for="radio-c">aaaap</label>
+// </div>

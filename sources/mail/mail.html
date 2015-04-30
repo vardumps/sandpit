@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="mail.css" />
+
+<style type="text/css">
+
+
+html { background-color: #ddd; }
+
+table td { border-collapse: collapse; }
+
+.mt-template { background-color: #ddd; }
+.mt-template .mt-1 td, .mt-template .mt-5 td, .mt-template .mt-6 td { height: 10px; }
+.mt-template .mt-1 td.mt-c1, .mt-template .mt-5 td.mt-c1, .mt-template .mt-6 td.mt-c1 { width: 10px; height: 10px; }
+.mt-template .mt-1 td.mt-c5, .mt-template .mt-5 td.mt-c5, .mt-template .mt-6 td.mt-c5 { width: 10px; height: 10px; }
+.mt-template .mt-3 td.mt-c2 { width: 1px; background-color: #c4c4c4; }
+.mt-template .mt-3 td.mt-c3 { background-color: #ffffff; }
+.mt-template .mt-3 td.mt-c3 .mt-body { padding: 20px 20px 10px 20px; box-shadow: 2px 3px 3px #c1c1c1; line-height: 18px; font-family: 'Lucida Grande',Verdana,Arial,sans-serif; font-size: 12px; color: #444444; }
+.mt-template .mt-3 td.mt-c3 .mt-delimiter { color: #b5b5b5; }
+.mt-template .mt-3 td.mt-c3 .mt-footer { margin: 10px 0 14px 0; padding-top: 10px; border-top: 1px solid #eeeeee; color: #aaaaaa; }
+.mt-template .mt-3 td.mt-c4 { width: 2px; background-color: #c4c4c4; }
+.mt-template .mt-2 td, .mt-template .mt-4 td { height: 2px; background-color: #c4c4c4; }
+.mt-template .mt-2 td.mt-c1, .mt-template .mt-4 td.mt-c1 { width: 1px; height: 2px; background-color: transparent; }
+.mt-template .mt-2 td.mt-c2, .mt-template .mt-4 td.mt-c2 { background-color: transparent; }
+.mt-template .mt-2 td.mt-c5, .mt-template .mt-4 td.mt-c5 { width: 2px; height: 2px; background-color: transparent; }
+.mt-template .mt-2 td.mt-c1, .mt-template .mt-2 td.mt-c2, .mt-template .mt-2 td.mt-c3, .mt-template .mt-2 td.mt-c4, .mt-template .mt-2 td.mt-c5 { height: 1px; }
+.mt-template .mt-2 td.mt-c4 { background-color: transparent; }
+
+.mt-template .mt-6 td { vertical-align: top; }
+.mt-template .mt-6 a { float: left; }
+.mt-template .mt-6 img { max-width: 172px; margin-left: 6px; }
+.mt-template .mt-6 .mt-contact { display: inline-block; width: 230px; margin-right: 6px; text-align: left; }
+.mt-template .mt-6 .mt-contact p { margin: 0 0 10px; text-align: left; line-height: 18px; font-family: 'Arial', 'Verdana'; font-size: 11px; color: #808080; }
+
+.mt-pbrainbow { height: 5px; font-size: 1px; }
+.mt-pbrainbow .mt-pbrainbow-1 { background-color: #ffd33a; }
+.mt-pbrainbow .mt-pbrainbow-2 { background-color: #86be40; }
+.mt-pbrainbow .mt-pbrainbow-3 { background-color: #54bed3; }
+.mt-pbrainbow .mt-pbrainbow-4 { background-color: #f062a4; }
+
+.mt-topnote { display: block; margin-top: 10px; margin-bottom: 0; color: #909090; font-family: 'Arial', 'Verdana'; font-size: 11px; line-height: 18px; text-align: center; }
+.mt-topnote p { margin-bottom: 0; }
+
+@media only screen and (max-device-width: 480px) { .mt-template .mt-6 .mt-contact { float: none; clear: both; display: block; width: 100%; } }
+
+
+
+{{styles}}
+</style>
+</head>
+<body {{attributes}} style="width: 100%!important; margin: 0; padding: 0;">
+
+	<div class="mt-topnote">
+		<p>##- Please type your reply above this line -##</p>
+	</div>
+
+	<table class="mt-template mt-template-boxshadow" cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr class="mt-1">
+			<td class="mt-c1"></td>
+			<td class="mt-c2"></td>
+			<td class="mt-c3"></td>
+			<td class="mt-c4"></td>
+			<td class="mt-c5"></td>
+		</tr>
+		<tr class="mt-2">
+			<td class="mt-c1"></td>
+			<td class="mt-c2"></td>
+			<td class="mt-c3"></td>
+			<td class="mt-c4"></td>
+			<td class="mt-c5"></td>
+		</tr>
+		<tr class="mt-3">
+			<td class="mt-c1"></td>
+			<td class="mt-c2"></td>
+			<td class="mt-c3">
+				
+				<table class="mt-template" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr class="mt-pbrainbow">
+						<td class="mt-pbrainbow-1">&nbsp;</td>
+						<td class="mt-pbrainbow-2">&nbsp;</td>
+						<td class="mt-pbrainbow-3">&nbsp;</td>
+						<td class="mt-pbrainbow-4">&nbsp;</td>
+						<td class="mt-pbrainbow-1">&nbsp;</td>
+						<td class="mt-pbrainbow-2">&nbsp;</td>
+					</tr>
+				</table>
+
+				<div class="mt-body">
+
+					<div class="mt-delimiter">{{delimiter}}</div>
+					{{content}}
+
+					<div class="mt-footer">
+						{{footer}}
+					</div>
+
+				</div>
+
+			</td>
+			<td class="mt-c4"></td>
+			<td class="mt-c5"></td>
+		</tr>
+		<tr class="mt-4">
+			<td class="mt-c1"></td>
+			<td class="mt-c2"></td>
+			<td class="mt-c3"></td>
+			<td class="mt-c4"></td>
+			<td class="mt-c5"></td>
+		</tr>
+		<tr class="mt-5">
+			<td class="mt-c1"></td>
+			<td class="mt-c2"></td>
+			<td class="mt-c3"></td>
+			<td class="mt-c4"></td>
+			<td class="mt-c5"></td>
+		</tr>
+	</table>
+
+	<table class="mt-template mt-template-footnote" cellpadding="0" cellspacing="0" border="0" width="100%">
+		<tr class="mt-6">
+			<td class="mt-c1"></td>
+			<td class="mt-c2"></td>
+			<td class="mt-c3" style="text-align: right;">
+				<a href="http://www.pluxbox.com/" target="_blank">
+					<img src="https://gallery.mailchimp.com/0b6591144c32809207c27ef36/images/619d981f-f58b-4118-877e-0a6d648d3f81.png" alt="" />
+				</a>
+				<div class="mt-contact">
+					<p>
+Address: Sumatralaan 45, 1217 GP Hilversum <br />
++31 (0)35 760 60 60, info@pluxbox.nl <br />
+Copyright © 2014 Pluxbox, All right reserved. <br />
+					</p>
+				</div>
+			</td>
+			<td class="mt-c4"></td>
+			<td class="mt-c5"></td>
+		</tr>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+.tl-face {
+
+	&:before,
+	> .tl-eyes.tl-lefteye,
+	> .tl-eyes.tl-righteye,
+	> .tl-eyes.tl-lefteye:before,
+	> .tl-eyes.tl-righteye:before,
+	.tl-mouth {
+		@include tl-transition(0.2s);
+	}
+}
+
+.tl-face {
+
+	@include tl-support-comment;
+	@include tl-afterbefore(before);
+	display: block;
+	position: absolute;
+	width: 330px;
+	height: 300px;
+	border-radius: 350px 350px 250px 250px;
+	border: 7px solid #e7e7e7;
+	box-shadow: 0 0 7px #c4c4c4;
+	background: #f6f6f6;
+
+
+	&:before {
+
+		@include tl-gradient(#e7e7e7, #c4c4c4, radial);
+		top: 6%;
+		right: 3%;
+		bottom: 6%;
+		left: 8%;
+		z-index: 2;
+		display: block;
+		border-radius: 350px 350px 250px 250px;
+	}
+
+	> .tl-eyes {
+
+		@include tl-afterbefore(before);
+		position: absolute;
+		top: 100px;
+		z-index: 2;
+		display: block;
+		width: 100px;
+		height: 50px;
+		border-radius: 55px 55px 25px 25px;
+		border: 5px solid #dddddd;
+		background: #fff;
+
+		&:before {
+			top: auto;
+			bottom: 0;
+			left: 50%;
+			width: 40px;
+			height: 30px;
+			margin-left: -20px;
+			border-radius: 40px 40px 0 0;
+			background: #d6d6d6;
+		}
+
+		&.tl-lefteye {
+			left: 60px;
+
+			&:before {
+				margin-left: -10px;
+			}
+		}
+		&.tl-righteye {
+			right: 35px;
+			&:before {
+				margin-left: -10px;
+			}
+		}
+	} //.tl-eyes
+	.tl-mouth {
+
+		overflow: hidden;
+		position: absolute;
+		top: 190px;
+		bottom: 40px;
+		left: 50%;
+		z-index: 2;
+		display: block;
+		width: 50px;
+		margin-left: -18px;
+		border-radius: 50px 50px 50px 30px;
+		border: 5px solid #d6d6d6;
+		background: #fff;
+
+		@include tl-afterbefore(before);
+		&:before {
+			top: auto;
+			bottom: 0;
+			display: block;
+			border-radius: 30px;
+			background: red;
+		}
+	} //.tl-mouth
+
+	&:hover {
+		cursor: pointer;
+
+		&:before {
+
+			@include tl-gradient(#e7e7e7, #c4c4c4, radial);
+			top: 4%;
+			right: 8%;
+			bottom: 4%;
+			left: 3%;
+			z-index: 2;
+			display: block;
+			border-radius: 350px 350px 250px 250px;
+		}
+		> .tl-eyes {
+
+			&.tl-lefteye {
+				left: 50px;
+
+				&:before {
+					margin-left: -30px;
+				}
+			}
+			&.tl-righteye {
+				right: 45px;
+				&:before {
+					margin-left: -30px;
+				}
+			}
+		}
+
+		.tl-mouth {
+			top: 180px;
+			bottom: 30px;			
+			width: 75px;
+			border-radius: 50px 50px 30px 50px;
+			margin-left: -36px;
+		}
+	}
+}//.tl-face
+
+// tl-face html
+
+// <div class="tl-face">
+// 	<i class="tl-eyes tl-lefteye"></i>
+// 	<i class="tl-eyes tl-righteye"></i>
+// 	<i class="tl-mouth"></i>
+// </div>
+
+
+// DEMO
+// <div class="mr-border-radius">
+// 	<span class="eye-brow left-eye-brow"></span>
+// 	<span class="eye left-eye">
+// 		<span class="pupil">
+// 			<span class="shine"></span>
+// 		</span>
+// 	</span>
+// 	<span class="eye-brow right-eye-brow"></span>
+// 	<span class="eye right-eye">
+// 		<span class="pupil">
+// 			<span class="shine"></span>
+// 		</span>
+// 	</span>
+// 	<span class="blush left-blush"></span>
+// 	<span class="blush right-blush"></span>
+// 	<span class="nose"></span>
+// 	<span class="mouth"></span>
+// </div>
+
+// 	<div class="tl-face"></div>
+
+// 	<fieldset>
+
+// 		<input id="input1" type="checkbox" title="footer">
+// 		<label for="input1" class="tl-animate" title="footer" tabindex="0">
+			
+// 			<ul>
+// 				<li><a href="pages/footer.html">fo<div class="tl-face"><div class="tl-eyes"></div></div>
+// <div class="tl-toggle-grid">
+// oter</a></li>
+// 				<li><a href="pages/tabs.html">tabs</a></li>
+// 			</ul>
+
+// 		</label>
+
+// 	</fieldset>
+	
+// </div>

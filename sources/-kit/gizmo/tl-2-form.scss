@@ -1,0 +1,347 @@
+.tl-form {
+
+	label,
+	.tl-form-label {
+
+		@include tl-fontset($comicsans,12px);
+		position: relative;
+		display: block;
+		height: 24px;
+		line-height: 24px;
+		padding-left: 3px;
+		color: #555555;
+		text-transform: uppercase;
+		font-weight: bold;
+		z-index: 1;
+
+		.tl-form-mark {
+
+			position: absolute;
+			top: 50%;
+			right: 3px;
+			margin-top: -12px;
+			display: none;
+			font-size: 8px;
+			color: #b943ac;
+			background: #ffffff;
+			white-space:nowrap;
+		}//.tl-form-mark
+	}//label || .tl-form-label
+
+	.tl-input {
+
+		@include tl-transition;
+		position: relative;
+		overflow: hidden;
+		border-width: 1px;
+		border-style: solid;
+		border-color: #dddcdc #e3e2e2 #dddcdc #e3e2e2;
+		border-radius: 5px;
+		background: #f5f5f5;
+
+		> i {
+
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			right: 2px;
+			left: 2px;
+			height: 0;
+			border-top: 1px solid #e2e2e2;
+			border-bottom: 1px solid #e6e6e6;
+		}//> i
+		> ins {
+
+			display: none;
+			position: absolute;
+			top: 1px;
+			right: 3px;
+			color: #b943ac;
+			font-size: 14px;
+			font-weight: bold;
+			text-decoration: none;
+		}//> ins
+		input {
+			&[placeholder] {
+
+				color: #9b9b9b;
+				// font-weight: bold;
+				// text-transform: none;
+				// font-style: italic;
+			}
+			&:not {
+				&:hover {
+
+					color: #555555;
+					font-weight: normal;
+				}
+			}
+		}//input
+
+		> input,
+		> textarea,
+		> input[type='file'] {
+
+			@include tl-fontset($comicsans,11px);
+			@extend %tl-ellipsis;
+			width: 99%;
+			height: 28px;
+			line-height: 28px;
+			margin: 0;
+			padding: 0 0.5%;
+			border: 1px solid transparent;
+			border-radius: 5px;
+			outline: none;
+			outline: 0;
+			background: none;
+		}//> input || > textarea || > input[type='file']
+
+		> textarea {
+			height: 78px;
+		}
+		> input[type=file] {
+			position: relative;
+			top: 1px;
+			right: 0;
+			text-align: left;
+			cursor: pointer;
+		}
+
+		&:hover {
+			border-color: #aeaeae;
+		}
+	}//.tl-input
+
+	.tl-input-file {
+		overflow: hidden;
+		position: relative;
+	}//.tl-input-file
+
+	.tl-input-file,
+	.tl-input-search {
+		.tl-input {
+
+			overflow: visible;
+			position: static;
+			height: 28px;
+			line-height: 28px;
+			border-radius: 5px 0 0 5px;
+			background-color: #f5f5f5;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAN9JREFUeNp00L8LAWEcx3EOmz/AcAujLFYGi8UgicGsG5UMBvkx3MJKlOGUH6PBX2AQpQxSivwBFv4ClvN+6nt1iadefe+e+zzf7vt4bdv2/FqWZZmUNCaGYUzUnvYnOKMUMYTJe0/te787SzCOAu4I4Yiy9hWcU2JoYoULXqiirrmCS0oUDYywkE9h8fZLcEqJSNDCAAnspVaQ8um6XuMhjzbG6COJALZoIcONnNRvlGTjga7qIMG1NMgSPDhXd5XJb3JdPmzQQY7gzplLk9NqsDOeqhOCqoE7qNZHgAEAnWVACKzg6BsAAAAASUVORK5CYII=);
+			background-position: 5px center;
+			background-repeat: no-repeat;
+
+			> i {
+				top: 1px;
+			}
+		}
+	}//.tl-input-file || .tl-input-search
+	.tl-input-file {
+		.tl-input {
+			> input[type=file] {
+
+				@include tl-fontset($comicsans,11px);
+				position: relative;
+				width: 100%;
+				text-align: right;
+				height: 28px;
+				line-height: 28px;
+				background: #ffffff;
+				z-index: 2;
+
+				-moz-opacity: 0;
+				opacity: 0;
+			}
+			input[type=text] {
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				z-index: 1;
+				text-indent: 25px;
+			}
+			.tl-input-button-browse {
+
+				@include tl-fontset;
+				overflow: visible;
+				position: absolute;
+				right: -1px;
+				bottom: -1px;
+				z-index: 1;
+
+				display: block;
+				height: 31px;
+				margin: 0;
+				padding-left: 10px;
+				padding-right: 0;
+				
+				line-height: 30px;
+				border-left: 1px solid #e3e2e2;
+				text-transform: uppercase;
+				text-decoration: none;
+				font-size: 10px;
+				color: #ffffff;
+				box-shadow: 2px 3px 1px #d6d6d6;
+				background: #ffffff;
+
+				> span {
+
+					display: block;
+					padding: 0 10px;
+					font-weight: bold;
+					background: #9b9b9b;
+				}
+			}//.tl-input-button-browse
+		}//.tl-input
+
+		&:hover {
+			.tl-input-button-browse {
+				border-left: 1px solid #8ec24c;
+			}
+		}
+	}//.tl-input-file
+	.tl-input-search {
+		.tl-input {
+
+			background-color: #f5f5f5;
+			background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASRJREFUeNqUk+0NgjAQhoEJ3EDcoE6gboATiAn/jROoE6j/SdQN3EDcwA10hDoBvmeuSTkPKpdcStvjuQ9e4rquI2llWQ6wGN7aoigeUcBiHwTAFMsGPhVxL/gRwEMQBEiO5RRIXMHnAFp5kTAk8yCUfYngmBzPY/iV76jSfWtFAD3xnMJpFjMtI2IoUc5biqkaFfFcUt6vNQgZzpdcLdlCa80N9iWzKOZaTNUZebMJ2bvtgkCuFfMHaNgFcu0MWAKqsUgz3v4INGHVOtgeL5gWyI2S8dG97fMbEXiGX7yWV2LAliXw0JQtYSFrwBJPJ3Qwgu/EF7Rc4VWAvu26UcTa398xcF/djcqSqIexus9KZVkvUAfM9mpNtLnFMiFNAb7+CDAALk5+loprW7EAAAAASUVORK5CYII=);
+			background-position: 5px center;
+			background-repeat: no-repeat;
+		}
+	}//.tl-input-search
+
+	.tl-input-captcha img {
+
+		@include tl-fontset($verdana, 11px);
+		overflow: hidden;
+		display: block;
+		width: 90%;
+		height: 30px;
+		line-height: 30px;
+		text-indent: 10px;
+		color: #7f7f7f;
+		border: 1px solid #e6e6e6;
+		border-radius: 5px;
+	}//.tl-captcha
+
+	.tl-form-error {
+		label,
+		.tl-form-label {
+			.tl-form-mark {
+				display: block;
+			}			
+		}
+	}//.tl-form-error
+	.tl-form-active {
+		.tl-input {
+			border-color: #b4b4b4 #bdbdbd;
+		}
+	}//.tl-form-active
+	.tl-form-validate {
+		&.tl-form-error {
+			.tl-input {
+				border-color: #b943ac;
+			}
+		}
+		.tl-input {
+			> ins {
+				display: block;
+			}
+		}
+	}//.tl-form-validate
+
+}//.tl-form
+
+
+// <form class="tl-form">
+
+// 	<div class="tl-input-container tl-input-search">
+		
+// 		<label for="fm-name">Zoeken:<span class="tl-form-mark">verplicht veld!</span></label>
+
+// 		<div class="tl-input"><i></i><ins>*</ins>
+// 			<input id="fm-name" class="tl-ellipsis" type="text" placeholder="ZOEKEN..." />
+// 		</div>
+		
+// 	</div>
+
+// 	<div class="tl-input-container tl-form-validate tl-form-error tl-form-active">
+		
+// 		<label for="fm-name">Naam:<span class="tl-form-mark">verplicht veld!</span></label>
+
+// 		<div class="tl-input"><i></i><ins>*</ins>
+// 			<input id="fm-name" class="tl-ellipsis" type="text" placeholder="kwef wefh khwuef khwefk uhwefh uiweghpreh kjxdhgkaevrhkihae" />
+// 		</div>
+		
+// 	</div>
+
+// 	<div class="tl-input-container tl-form-validate">
+		
+// 		<label for="fm-email">E-mailadres:<span class="tl-form-mark">verplicht veld!</span></label>
+
+// 		<div class="tl-input"><i></i><ins>*</ins>
+// 			<input id="fm-email" class="tl-ellipsis" type="text" placeholder="Uw e-mailadres..." />
+// 		</div>
+		
+// 	</div>
+
+// 	<div class="tl-input-container">
+		
+// 		<label for="fm-phonenumber">Telefoonnummer:<span class="tl-form-mark">verplicht veld!</span></label>
+
+// 		<div class="tl-input"><i></i><ins>*</ins>
+// 			<input id="fm-phonenumber" class="tl-ellipsis" type="text" placeholder="Uw telefoonnummer..." />
+// 		</div>
+		
+// 	</div>
+
+// 	<div class="tl-input-container tl-form-validate">
+		
+// 		<label for="fm-message">Bericht:<span class="tl-form-mark">verplicht veld!</span></label>
+
+// 		<div class="tl-input"><i></i><ins>*</ins>
+// 			<textarea id="fm-message" class="tl-ellipsis" placeholder="Uw bericht..."></textarea>
+// 		</div>
+		
+// 	</div>
+
+// 	<label for="tl-input-file">Bijlage:<!-- <span class="tl-form-mark">verplicht veld!</span> --></label>
+
+// 	<div class="tl-input-container tl-input-file">
+		
+// 		<div class="tl-input"><i></i><ins>*</ins>
+// 			<input type="file" onchange="getElementById('tl-input-file').value = getElementById('tl-input-file-hidden').value;" id="tl-input-file-hidden" size="1000" />
+// 			<input type="text" id="tl-input-file" />
+// 			<a class="tl-form-button-browse" href="#"><span>Bladeren</span></a>
+// 		</div>
+
+// 	</div>
+
+// 	<div class="tl-row tl-form-captcha tl-form-validate tl-form-error tl-mb10">
+
+// 		<div class="tl-size6of12 tl-relative">
+
+// 			<label for="fm-captcha">Veiligheidscode:</label>
+
+// 			<img src="" alt="captcha" />
+
+// 		</div>
+
+// 		<div class="tl-size6of12 tl-push6">
+
+// 			<div class="tl-input-container">
+				
+// 				<span class="tl-form-label">&nbsp;<span class="tl-form-mark">verplicht veld!</span></span>
+
+// 				<div class="tl-input"><i></i><ins>*</ins>
+// 					<input id="fm-captcha" class="tl-ellipsis" type="text" maxlength="6" placeholder="Code overnemen..." />
+// 				</div>
+				
+// 			</div>
+
+// 		</div>
+
+// 	</div>
+
+// </form>

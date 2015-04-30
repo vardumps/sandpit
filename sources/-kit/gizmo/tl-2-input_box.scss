@@ -1,0 +1,61 @@
+%tl-input-box-style {
+
+	@include tl-fontset($comicsans,12px);
+	@include tl-transition;
+	@extend %tl-reset-marginpadding;
+	width: 100%;
+	box-sizing: border-box;
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 0;
+	border: 1px solid #c7c6c6;
+
+	&:focus {
+		border: 1px solid #a09f9f;
+		// box-shadow: 0 0 1px #aeaeae inset;
+		outline: none;
+	}
+	&:first-child {
+		padding-left: 10px;
+	}
+}
+
+.tl-form {
+
+	@include tl-fontset($comicsans,14px);
+
+	.tl-icon {
+		position: static;
+	}
+
+	fieldset {
+		position: relative;
+
+		.tl-icon {
+			position: absolute;
+			top: 50%;
+			left: 15px;
+			display: block;
+			margin-top: -8px;
+			margin-left: -7px;
+		}
+	}
+}
+.tl-input-box {
+
+	@extend %tl-input-box-style;
+
+	&.tl-disabled, [disabled] {
+
+		opacity: .4;
+		cursor: default;
+		color: rgb(155, 155, 155);
+		background: #f2f2f2;
+	}
+}
+
+// tl-input
+
+// <input class="tl-input-box" type="text" disabled/>
+// <input class="tl-input-box tl-disabled" type="text" disabled/>

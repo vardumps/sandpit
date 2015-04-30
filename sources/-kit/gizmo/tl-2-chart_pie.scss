@@ -1,0 +1,193 @@
+@-webkit-keyframes chartPieSpinner {
+	0% {
+		@include tl-vendor-prefix( "transform", "rotate(-135deg)" );
+		@include tl-vendor-prefix( "transform-origin", "50% 50%" );
+	}
+	100% {
+		@include tl-vendor-prefix( "transform", "rotate(225deg)" );
+		@include tl-vendor-prefix( "transform-origin", "50% 50%" );
+	}
+}
+@-webkit-keyframes chartPieTurnon {
+	0% { display: none; opacity: 0; }
+	49% { display: none; opacity: 0; }
+	50% { display: block; opacity: 1; }
+	100% { display: block; opacity: 1; }
+}
+@-webkit-keyframes chartPieTurnoff {
+	0% { z-index: 2; }
+	49% { z-index: 2; }
+	50% { z-index: 0; }
+	100% { z-index: 0; }
+}
+
+@mixin tl-chart-pie($henk: 35px ) {
+
+	$radius: $henk;
+
+	$loaderColor: #bd0f10;
+	$loaderRailColor: #404040;
+	$maskColor: #2b2b2b;
+
+	$objectSize: $radius * 2;
+	$maskRadius: $radius + 1;
+
+	// $borderBinnen: $radius * 0.2333333333;
+	$borderBinnen: $radius * 0.24; //IBC setting
+
+	$maskInner: $radius - $borderBinnen;
+	$maskInnerColor: $maskColor;
+	$animationDuration: 15s;
+
+	$imageRelativeSize: $radius * 1.38;
+	$imageRelativeSizeCorreted: $imageRelativeSize + 0.2;
+
+	.tl-chart-pie {
+		position: relative;
+		width: $objectSize;
+		height: $objectSize;
+		// background: red;
+
+		.tl-chart-spinner {
+
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 1;
+			width: 0;
+			height: 0;
+			border-radius: $radius;
+			border-width: $radius;
+			border-style: solid;
+			border-color: $loaderColor $loaderColor transparent transparent;
+			// border-color: green green transparent transparent;
+
+			-webkit-animation-name: chartPieSpinner;
+			-webkit-animation-duration: $animationDuration;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-delay: initial;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: initial;
+			-webkit-animation-fill-mode: initial;
+			-webkit-animation-play-state: initial;
+
+		}
+		.tl-chart-filler {
+			-webkit-animation-name: chartPieTurnon;
+			-webkit-animation-duration: $animationDuration;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-delay: initial;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: initial;
+			-webkit-animation-fill-mode: initial;
+			-webkit-animation-play-state: initial;
+
+			-webkit-transform: rotate(-45deg);
+
+			position: relative;
+			z-index: 1;
+			border-radius: $radius;
+			border-width: $radius;
+			border-style: solid;
+			border-color: transparent $loaderColor $loaderColor transparent;
+			// border-color: transparent yellow yellow transparent;
+
+		}
+		.tl-chart-leftmask {
+			-webkit-animation-name: chartPieTurnoff;
+			-webkit-animation-duration: $animationDuration;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-delay: initial;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-direction: initial;
+			-webkit-animation-fill-mode: initial;
+			-webkit-animation-play-state: initial;
+
+			position: absolute;
+			top: -1px;
+			left: -1px;
+			z-index: 2;
+
+			border-radius: $maskRadius;
+			border-width: $maskRadius;
+			border-style: solid;
+			// border-color: $maskColor transparent transparent $maskColor;
+			border-color: $loaderRailColor transparent transparent $loaderRailColor;
+
+	   		-webkit-transform: rotate(-45deg);
+		}
+		.tl-chart-rightmask {
+
+			position: absolute;
+			top: -1px;
+			left: -1px;
+			z-index: 0;
+
+			border-radius: $maskRadius;
+			border-width: $maskRadius;
+			border-style: solid;
+			// border-color: transparent $maskColor $maskColor transparent;
+			border-color: transparent $loaderRailColor $loaderRailColor transparent;
+
+	   		-webkit-transform: rotate(-45deg);
+		}
+		.tl-chart-innermask {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: 4;
+			border-radius: $radius;
+			border-width: $maskInner;
+			border-style: solid;
+			border-color: $maskColor;
+			margin: -#{$maskInner} 0 0 -#{$maskInner};
+		}
+		.tl-chart-image {
+			overflow: hidden;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			z-index: 4;
+			display: block;
+			width: $imageRelativeSizeCorreted;
+			height: $imageRelativeSizeCorreted;
+			margin-left: -#{($imageRelativeSizeCorreted / 2)-0.1};
+			margin-top: -#{($imageRelativeSizeCorreted / 2)-0.1};
+			border-radius: $imageRelativeSize;
+			background: #cccccc;
+		}
+	}
+}
+
+// tl-chart-pie
+
+// <div class="tl-chart-pie">
+// 	<div class="tl-chart-spinner"></div>
+// 	<div class="tl-chart-filler"></div>
+// 	<div class="tl-chart-leftmask"></div>
+// 	<div class="tl-chart-rightmask"></div>
+// 	<div class="tl-chart-innermask">
+
+// 		<a class="tl-chart-image" href="">
+// 			<img src="http://placehold.it/48x48" alt="">
+// 		</a>
+
+// 	</div>
+// </div>
+
+
+
+
+
+// .karmis {
+// 	@include tl-vendor-prefix("transition", "0.6s ease-in-out");
+// }
+// @mixin spin ( $botsauto, $bumper ){
+// 	$bla: unquote($botsauto);
+// 	$ble: unquote($bumper);
+// 	#{$bla}: $ble;
+// }
+
+// .kermis {
+// 	@include spin("display", "block(weflijwe)");
+// }

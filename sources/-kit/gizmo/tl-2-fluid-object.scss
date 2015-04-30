@@ -1,0 +1,28 @@
+.tl-fluid-object {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.tl-fluid-object iframe,	
+.tl-fluid-object object,	
+.tl-fluid-object embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: red;
+}
+
+// tl-fluid-object
+
+// <div class="tl-fluid-object">
+// 	<iframe src="http://player.vimeo.com/video/30421472?title=0&amp;byline=0&amp;portrait=0" width="546" height="307" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
+// </div>
+
+// <div class="tl-fluid-object">
+// 	<object width="420" height="315"><param name="movie" value="//www.youtube.com/v/C8HCZd2HFfw?hl=en_US&amp;version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/C8HCZd2HFfw?hl=en_US&amp;version=3" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+// </div>

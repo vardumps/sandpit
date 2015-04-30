@@ -1,0 +1,153 @@
+@media only screen and (min-width:960px) and (max-width:1120px) {
+}
+
+@media only screen and (min-width:768px) and (max-width:959px) {
+}
+
+@media only screen and (max-width:767px) {
+
+	[class*="#{$pre}-col"],
+	[class~=" #{$pre}-col"] {
+		float: left !important;
+		width: 33.33% !important;
+	}
+	[class*="#{$pre}-mcol"],
+	[class~=" #{$pre}-mcol"] {
+		float: left !important;
+		width: 31.33% !important;
+	}
+}
+// @media only screen and (min-width: 480px) and (max-width: 766px) {
+@media only screen and (max-width: 766px) {
+
+	[class*="#{$pre}-col"],
+	[class~=" #{$pre}-col"] {
+		float: left !important;
+		width: 50% !important;
+	}
+	[class*="#{$pre}-mcol"],
+	[class~=" #{$pre}-mcol"] {
+		float: left !important;
+		width: 48% !important;
+	}
+
+	.fj-directcontact > a {
+
+		height: auto;
+		text-align: center;
+		line-height: 24px;
+
+		> cite {
+			display: block;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			margin-right: 0;
+			line-height: 24px;
+		}	
+	}
+	.fj-header {
+
+		header {
+
+			position: relative;
+			height: 70px;
+			line-height: 58px;
+			font-size: 2.5rem;
+			
+			sup	{
+				position: absolute;
+				bottom: -8px;
+				left: 22px;
+				font-size: 1.0rem;
+			}
+		}
+	}
+	.fj-message > h1 {
+
+		margin-bottom: 0;
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+	.fj-directcontact > a {
+
+		height: auto;
+		text-align: center;
+		line-height: 24px;
+
+		> cite {
+			display: block;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			margin-right: 0;
+			line-height: 24px;
+		}	
+	}
+	.fj-header {
+
+		header {
+
+			position: relative;
+			height: 70px;
+			line-height: 58px;
+			font-size: 2.5rem;
+			
+			sup	{
+				position: absolute;
+				bottom: -8px;
+				left: 22px;
+				font-size: 1.0rem;
+			}
+		}
+	}
+	.fj-message > h1 {
+		font-size: 1.2rem;
+		line-height: 2rem;
+	}
+
+}
+
+// @media only screen and (max-width: 319px) {
+// 	.fj-directcontact > a {
+
+// 		height: auto;
+// 		text-align: center;
+// 		line-height: 24px;
+
+// 		> cite {
+// 			display: block;
+// 			overflow: hidden;
+// 			text-overflow: ellipsis;
+// 			white-space: nowrap;
+// 			margin-right: 0;
+// 			line-height: 24px;
+// 		}	
+// 	}
+// 	.fj-header {
+
+// 		header {
+
+// 			position: relative;
+// 			height: 70px;
+// 			line-height: 58px;
+// 			font-size: 2.5rem;
+			
+// 			sup	{
+// 				position: absolute;
+// 				bottom: -8px;
+// 				left: 22px;
+// 				font-size: 1.0rem;
+// 			}
+// 		}
+// 	}
+// 	.fj-message > h1 {
+// 		font-size: 1.2rem;
+// 		line-height: 2rem;
+// 	}
+
+// }

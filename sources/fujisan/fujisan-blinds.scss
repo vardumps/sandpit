@@ -1,0 +1,105 @@
+@-webkit-keyframes blindsClose1 { 0% { height: 0%; } 100% { height: 100%; } }
+@-webkit-keyframes blindsClose2 { 0% { height: 0%; } 100% { height: 100%; } }
+@-webkit-keyframes blindsClose3 { 0% { height: 0%; } 100% { height: 100%; } }
+@-webkit-keyframes blindsClose4 { 0% { height: 0%; } 100% { height: 100%; } }
+@-webkit-keyframes blindsClose5 { 0% { height: 0%; } 100% { height: 100%; } }
+@-webkit-keyframes blindsClose6 { 0% { height: 0%; } 100% { height: 100%; } }
+@-webkit-keyframes blindsClose7 { 0% { height: 0%; } 100% { height: 100%; } }
+@-webkit-keyframes blindsClose8 { 0% { height: 0%; } 100% { height: 100%; } }
+@-webkit-keyframes blindsClose9 { 0% { height: 0%; } 100% { height: 100%; } }
+@-webkit-keyframes blindsClose10 { 0% { height: 0%; } 100% { height: 100%; } }
+@-webkit-keyframes blindsClose11 { 0% { height: 0%; } 100% { height: 100%; } }
+@-webkit-keyframes blindsClose12 { 0% { height: 0%; } 100% { height: 100%; } }
+
+@-webkit-keyframes blindsOpen1 { 0% { height: 100%; } 100% { height: 0%; } }
+@-webkit-keyframes blindsOpen2 { 0% { height: 100%; } 100% { height: 0%; } }
+@-webkit-keyframes blindsOpen3 { 0% { height: 100%; } 100% { height: 0%; } }
+@-webkit-keyframes blindsOpen4 { 0% { height: 100%; } 100% { height: 0%; } }
+@-webkit-keyframes blindsOpen5 { 0% { height: 100%; } 100% { height: 0%; } }
+@-webkit-keyframes blindsOpen6 { 0% { height: 100%; } 100% { height: 0%; } }
+@-webkit-keyframes blindsOpen7 { 0% { height: 100%; } 100% { height: 0%; } }
+@-webkit-keyframes blindsOpen8 { 0% { height: 100%; } 100% { height: 0%; } }
+@-webkit-keyframes blindsOpen9 { 0% { height: 100%; } 100% { height: 0%; } }
+@-webkit-keyframes blindsOpen10 { 0% { height: 100%; } 100% { height: 0%; } }
+@-webkit-keyframes blindsOpen11 { 0% { height: 100%; } 100% { height: 0%; } }
+@-webkit-keyframes blindsOpen12 { 0% { height: 100%; } 100% { height: 0%; } }
+
+@-webkit-keyframes bannerSwitch {
+	0% {
+		z-index: 0;
+	}
+	100% {
+		z-index: 1;		
+	}
+}
+$fjvenetianBlindsParts: 10;
+.fj-venetianBlinds {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+
+	i {
+		position: absolute;
+		top: 0;
+		width: 100% / $fjvenetianBlindsParts;
+
+		border-radius: 0 0 5px 5px;
+		box-shadow: 0 0 5px #000;
+		background: url('images/fujisan/food-bg.jpg') no-repeat center top;
+		-webkit-animation-fill-mode: forwards;
+		-webkit-animation-timing-function: linear;
+	}
+	i:nth-child(1) { left: 0; -webkit-animation: blindsClose1 1s 1 forwards .2s , blindsOpen1 1s 1 forwards 2.2s ; }
+	i:nth-child(2) { left: 10%; -webkit-animation: blindsClose2 1s 1 forwards .4s, blindsOpen1 1s 1 forwards 2.4s ; }
+	i:nth-child(3) { left: 20%; -webkit-animation: blindsClose3 1s 1 forwards .6s, blindsOpen1 1s 1 forwards 2.6s ; }
+	i:nth-child(4) { left: 30%; -webkit-animation: blindsClose4 1s 1 forwards .8s, blindsOpen1 1s 1 forwards 2.8s  ; }
+	i:nth-child(5) { left: 40%; -webkit-animation: blindsClose5 1s 1 forwards 1s, blindsOpen1 1s 1 forwards 3s  ; }
+	i:nth-child(6) { left: 50%; -webkit-animation: blindsClose6 1s 1 forwards 1.2s, blindsOpen1 1s 1 forwards 3.2s ; }
+	i:nth-child(7) { left: 60%; -webkit-animation: blindsClose7 1s 1 forwards 1.4s, blindsOpen1 1s 1 forwards 3.4s ; }
+	i:nth-child(8) { left: 70%; -webkit-animation: blindsClose8 1s 1 forwards 1.6s, blindsOpen1 1s 1 forwards 3.6s  ; }
+	i:nth-child(9) { left: 80%; -webkit-animation: blindsClose9 1s 1 forwards 1.8s, blindsOpen1 1s 1 forwards 3.8s  ; }
+	i:nth-child(10) { left: 90%; -webkit-animation: blindsClose10 1s 1 forwards 2s, blindsOpen1 1s 1 forwards 4s  ; }
+
+	i:nth-child(1) { background-position: 0 0; }
+	i:nth-child(2) { background-position: 10% 0; }
+	i:nth-child(3) { background-position: 20% 0; }
+	i:nth-child(4) { background-position: 30% 0; }
+	i:nth-child(5) { background-position: 40% 0; }
+	i:nth-child(6) { background-position: 50% 0; }
+	i:nth-child(7) { background-position: 60% 0; }
+	i:nth-child(8) { background-position: 70% 0; }
+	i:nth-child(9) { background-position: 80% 0; }
+	i:nth-child(10) { background-position: 90% 0; }
+
+	// i:nth-child(1) { background-position: 0 0; }
+	// i:nth-child(2) { background-position: -126px 0; }
+	// i:nth-child(3) { background-position: -252px 0; }
+	// i:nth-child(4) { background-position: -378px 0; }
+	// i:nth-child(5) { background-position: -504px 0; }
+	// i:nth-child(6) { background-position: -630px 0; }
+	// i:nth-child(7) { background-position: -756px 0; }
+	// i:nth-child(8) { background-position: -882px 0; }
+	// i:nth-child(9) { background-position: -1008px 0; }
+	// i:nth-child(10) { background-position: -1134px 0; }
+}
+
+.fj-blinds {
+
+	border-bottom: 5px solid #a82828;
+	background: #A37554;
+
+	.fj-blinds-inner {
+
+		position: relative;
+		padding: 0;
+
+		img {
+			overflow: hidden;
+			display: block;
+			width: 100%;
+		}
+	}
+}

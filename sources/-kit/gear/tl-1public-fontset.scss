@@ -1,0 +1,23 @@
+// $tl-fontfamilies: Comic Sans MS,Verdana,Arial,Helvetica;
+// @mixin tl-fontsets( $fontfamily-font: $tl-fontfamilies, $fontfamily-size: 12px ) {
+
+// 	font-family: $fontfamily-font;
+// 	font-size: $fontfamily-size;
+// }
+// @mixin tl-fontset {
+// 	@include tl-fontsets;
+// }  
+
+
+$georgia: Georgia, Cambria, "Times New Roman", Times, serif;
+$helvetica: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$lucida-grande: "Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+$monospace: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
+$verdana: Verdana, Geneva, sans-serif;
+$comicsans: 'Comic Sans MS','Verdana','Arial','Helvetica';
+
+@mixin tl-fontset( $fontfamily-font: $comicsans, $fontfamily-size: 12px ) {
+
+	font-family: #{$fontfamily-font};
+	font-size: $fontfamily-size;
+}

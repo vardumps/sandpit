@@ -1,0 +1,79 @@
+[class*="tl-input-box-search"],
+[class~=" tl-input-box-search"] {
+
+	.tl-button {
+		margin-bottom: 0;
+	}
+
+	.tl-form-input {
+
+		&:first-child {
+			@extend %tl-input-box-style;
+		}
+	}
+}
+
+// variation-search
+[class*="tl-input-box-search-left"],
+[class~=" tl-input-box-search-left"] {
+	.tl-button { float: left; }
+	.tl-button,
+	.tl-button:after { border-radius: 4px 0 0 4px; }
+	.tl-form-input { border-radius: 0 4px 4px 0; }
+}
+[class*="tl-input-box-search-right"],
+[class~=" tl-input-box-search-right"] {
+	.tl-button { float: right; }
+	.tl-button,
+	.tl-button:after { border-radius: 0 4px 4px 0; }
+	.tl-form-input { border-radius: 4px 0 0 4px; }
+}
+
+// tl-input-box-search
+
+// <div style="width: 500px;">
+
+// 	<form class="tl-form tl-theme-pb tl-clearfix">
+
+// 		<input class="tl-input-box" type="text" placeholder="ZOEKEN..." />
+
+// 	</form>
+
+// 	<form class="tl-form tl-theme-pb tl-clearfix">
+
+// 		<fieldset>
+
+// 			<i class="tl-icon fa fa-search"></i>
+// 			<input class="tl-input-box" type="text" placeholder="ZOEKEN..." />
+
+// 		</fieldset>
+
+// 	</form>
+
+// 	<form class="tl-form tl-theme-pb tl-input-box-search-left tl-clearfix">
+
+// 		<button class="tl-button tl-success"><b></b>BUT Button</button>
+
+// 		<fieldset>
+
+// 			<i class="tl-icon fa fa-search"></i>
+// 			<input class="tl-input-box" type="text" placeholder="ZOEKEN..." />
+
+// 		</fieldset>
+
+// 	</form>
+
+// 	<form class="tl-form tl-theme-pb tl-input-box-search-right">
+
+// 		<button class="tl-button tl-success"><b></b>BUT Button</button>
+
+// 		<fieldset>
+
+// 			<i class="tl-icon fa fa-search"></i>
+// 			<input class="tl-input-box" type="text" placeholder="ZOEKEN..." />
+
+// 		</fieldset>
+
+// 	</form>
+
+// </div>

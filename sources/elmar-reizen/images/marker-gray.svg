@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="273px" height="132px" viewBox="0 0 273 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>Marker</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Marker" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)">
+            <path d="M271.671,106.035 L31.902,131.848 L19.568,49.805 L271.671,0.276 L271.671,106.035 L271.671,106.035 Z" id="Shape" opacity="0.902" fill="#E5EBEF" sketch:type="MSShapeGroup"></path>
+            <path d="M-0.204,32.009 L247.81,13.469 L231.347,118.214 L-0.204,116.127 L-0.204,32.009 L-0.204,32.009 Z" id="Shape" opacity="0.8" fill="#E2E7EA" sketch:type="MSShapeGroup"></path>
+            <path d="M232.6,110.241 L164.167,117.608 L29.579,116.396 L19.568,49.805 L181.794,18.404 L247.81,13.469 L232.6,110.241 L232.6,110.241 Z" id="Shape" fill="#D7DFE3" sketch:type="MSShapeGroup"></path>
+            <path d="M36,93.636 L235.642,38" id="Shape" stroke="#8499A4" stroke-width="6" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

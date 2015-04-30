@@ -1,0 +1,71 @@
+.tl-middlefy {
+
+	@include tl-support-comment('.ie6, ie7, ie8, ie9, ie10, chrome, ff, safari');
+
+	width: 100%;
+	height: auto;
+
+	.tl-middlefy-element {
+
+		float: left;
+		border: solid 1px;
+		border-color: #DDDCDC #E3E2E2;
+		margin: 0 10px 0 0;
+		border-radius: 10px;
+		background: #F5F5F5;
+
+		> a {
+			@include tl-transition;
+			display: table-cell;
+			width: 100px;
+			height: 100px;
+			border-radius: 10px;
+			text-align: center;
+			vertical-align: middle;
+
+			&:hover {
+				border-radius: 10px;
+				background: #B943AC;
+			}		
+		}
+		> div {
+			border-collapse: collapse;
+		}
+		> img {
+			border: none;
+			vertical-align: middle;
+		}
+	}
+}
+.ie8,
+.ie7 {
+	.tl-middlefy a {
+		display: block;
+	}
+}
+.ie8,
+.ie7 {
+	.tl-middlefy span {
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+	}
+}
+.ie8,
+.ie7 {
+	.tl-middlefy {
+		_height: 0;
+		zoom: 1;
+	}
+}
+
+//tl-middlefy html
+
+// <div class="tl-middlefy tl-clearfix">
+// 	<div class="tl-middlefy-element">
+// 		<a href="#"><span></span><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASRJREFUeNqUk+0NgjAQhoEJ3EDcoE6gboATiAn/jROoE6j/SdQN3EDcwA10hDoBvmeuSTkPKpdcStvjuQ9e4rquI2llWQ6wGN7aoigeUcBiHwTAFMsGPhVxL/gRwEMQBEiO5RRIXMHnAFp5kTAk8yCUfYngmBzPY/iV76jSfWtFAD3xnMJpFjMtI2IoUc5biqkaFfFcUt6vNQgZzpdcLdlCa80N9iWzKOZaTNUZebMJ2bvtgkCuFfMHaNgFcu0MWAKqsUgz3v4INGHVOtgeL5gWyI2S8dG97fMbEXiGX7yWV2LAliXw0JQtYSFrwBJPJ3Qwgu/EF7Rc4VWAvu26UcTa398xcF/djcqSqIexus9KZVkvUAfM9mpNtLnFMiFNAb7+CDAALk5+loprW7EAAAAASUVORK5CYII=" /></a>
+// 	</div>
+// 	<div class="tl-middlefy-element">
+// 		<a href="#"><span></span><img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAN9JREFUeNp00L8LAWEcx3EOmz/AcAujLFYGi8UgicGsG5UMBvkx3MJKlOGUH6PBX2AQpQxSivwBFv4ClvN+6nt1iadefe+e+zzf7vt4bdv2/FqWZZmUNCaGYUzUnvYnOKMUMYTJe0/te787SzCOAu4I4Yiy9hWcU2JoYoULXqiirrmCS0oUDYywkE9h8fZLcEqJSNDCAAnspVaQ8um6XuMhjzbG6COJALZoIcONnNRvlGTjga7qIMG1NMgSPDhXd5XJb3JdPmzQQY7gzplLk9NqsDOeqhOCqoE7qNZHgAEAnWVACKzg6BsAAAAASUVORK5CYII=" /></a>
+// 	</div>
+// </div>

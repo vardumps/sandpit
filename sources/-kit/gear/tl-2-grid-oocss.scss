@@ -1,0 +1,297 @@
+.tl-grid-oocss {
+	
+	@include tl-support-comment('ie7 ,ie8, ie9, ie10, chrome, ff, safari');
+
+	&.demo {
+		.tl-size, .tl-size1of12, .tl-size2of12, .tl-size3of12, .tl-size4of12, .tl-size5of12, .tl-size6of12, .tl-size7of12, .tl-size8of12, .tl-size9of12, .tl-size10of12, .tl-size11of12, .tl-size12of12, .tl-psize1of12, .tl-psize2of12, .tl-psize3of12, .tl-psize4of12, .tl-psize5of12, .tl-psize6of12, .tl-psize7of12, .tl-psize8of12, .tl-psize9of12, .tl-psize10of12, .tl-psize11of12, .tl-psize12of12 {
+
+			@include tl-fontset($comicsans, 12px);
+			@include tl-gradient(#F5F5F5, #ffffff, horizontal);
+
+			position: relative;
+			padding-top: 5px;
+			padding-bottom: 5px;
+
+			text-align: center;
+			
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				border-width: 1px 1px 1px 0;
+				border-style: solid;
+				border-color: #dddcdc #e3e2e2 #dddcdc #e3e2e2;
+			}
+
+			&:hover {
+				@include tl-gradient(#e5e5e5, #f5f5f5, horizontal);
+				cursor: pointer;
+			}
+		}
+	}
+
+	
+}
+.tl-row {
+
+	overflow: hidden;
+}
+.tl-size {
+
+	overflow: hidden;
+	float: left;
+	margin-right: -100%;
+	display: block;
+}
+.tl-push0 {
+	margin-left: 0;
+}
+$s-divisionTypes: (s size, ps percentagesize, p push);
+$s-divisionlength: 12;
+$s-percentageSign: '%';
+
+@each $s-divisionType in $s-divisionTypes {
+
+	$s-keyDiv: nth($s-divisionType, 1);
+
+	@for $i from 1 through $s-divisionlength {
+
+		@if $s-keyDiv == 'ps' {
+
+			.tl-#{$s-keyDiv}ize#{$i}of#{$s-divisionlength} {
+
+				@extend .tl-size;
+				$s-perDivision: ($i/$s-divisionlength);
+				$s-percentageDivision: ($s-perDivision * 100);
+				width: $s-percentageDivision - 2#{$s-percentageSign};
+				padding: 0 1%;
+			}
+		}
+		@else if $s-keyDiv == 's' {
+
+			.tl-#{$s-keyDiv}ize#{$i}of#{$s-divisionlength} {
+
+				@extend .tl-size;
+				width: percentage($i/$s-divisionlength);
+			}
+		}
+		@else {
+
+			.tl-push#{$i} {
+
+				margin-left: percentage($i/$s-divisionlength);
+			}
+		}
+	}
+}
+
+//tl-grid-oocss demo
+
+// <div class="tl-grid-oocss demo">
+// 	<div class="tl-row">
+// 	   <div class="tl-psize1of12 tl-push0"> tl-size1 </div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize1of12 tl-push1"> tl-size1 </div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize1of12 tl-push2"> tl-size1 </div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize1of12 tl-push3"> tl-size1 </div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize1of12 tl-push4"> tl-size1 </div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize1of12 tl-push5"> tl-size1 </div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize1of12 tl-push6"> tl-size1 </div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize1of12 tl-push7"> tl-size1 </div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize1of12 tl-push8"> tl-size1 </div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize1of12 tl-push9"> tl-size1 </div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize1of12 tl-push10"> tl-size1 </div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize1of12 tl-push11"> tl-size1 </div>
+// 	</div>
+
+// 	<div class="heading">Elastic paddings</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize1of12 tl-push0"> tl-size1</div>
+// 	   <div class="tl-psize1of12 tl-push1"> tl-size1</div>
+// 	   <div class="tl-psize1of12 tl-push2"> tl-size1</div>
+// 	   <div class="tl-psize1of12 tl-push3"> tl-size1</div>
+// 	   <div class="tl-psize1of12 tl-push4"> tl-size1</div>
+// 	   <div class="tl-psize1of12 tl-push5"> tl-size1</div>
+// 	   <div class="tl-psize1of12 tl-push6"> tl-size1</div>
+// 	   <div class="tl-psize1of12 tl-push7"> tl-size1</div>
+// 	   <div class="tl-psize1of12 tl-push8"> tl-size1</div>
+// 	   <div class="tl-psize1of12 tl-push9"> tl-size1</div>
+// 	   <div class="tl-psize1of12 tl-push10"> tl-size1</div>
+// 	   <div class="tl-psize1of12 tl-push11"> tl-size1</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize2of12 tl-push0"> tl-size2</div>
+// 	   <div class="tl-psize2of12 tl-push2"> tl-size2</div>
+// 	   <div class="tl-psize2of12 tl-push4"> tl-size2</div>
+// 	   <div class="tl-psize2of12 tl-push6"> tl-size2</div>
+// 	   <div class="tl-psize2of12 tl-push8"> tl-size2</div>
+// 	   <div class="tl-psize2of12 tl-push10"> tl-size2</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize3of12 tl-push0"> tl-size3</div>
+// 	   <div class="tl-psize3of12 tl-push3"> tl-size3</div>
+// 	   <div class="tl-psize3of12 tl-push6"> tl-size3</div>
+// 	   <div class="tl-psize3of12 tl-push9"> tl-size3</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize4of12 tl-push0"> tl-size4</div>
+// 	   <div class="tl-psize4of12 tl-push4"> tl-size4</div>
+// 	   <div class="tl-psize4of12 tl-push8"> tl-size4</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize5of12 tl-push0"> tl-size5</div>
+// 	   <div class="tl-psize5of12 tl-push5"> tl-size5</div>
+// 	   <div class="tl-psize2of12 tl-push10"> tl-size5</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize6of12 tl-push0"> tl-size6</div>
+// 	   <div class="tl-psize6of12 tl-push6"> tl-size6</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize7of12 tl-push0"> tl-size7</div>
+// 	   <div class="tl-psize5of12 tl-push7"> tl-size7</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize8of12 tl-push0"> tl-size8</div>
+// 	   <div class="tl-psize4of12 tl-push8"> tl-size8</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize9of12 tl-push0"> tl-size9</div>
+// 	   <div class="tl-psize3of12 tl-push9"> tl-size9</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-psize12of12 tl-push0"> tl-size10</div>
+// 	</div>
+
+// 	<div class="heading">No paddings</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-size1of12 tl-push0">of12 tl-size1</div>
+// 	   <div class="tl-size1of12 tl-push1">of12 tl-size1</div>
+// 	   <div class="tl-size1of12 tl-push2">of12 tl-size1</div>
+// 	   <div class="tl-size1of12 tl-push3">of12 tl-size1</div>
+// 	   <div class="tl-size1of12 tl-push4">of12 tl-size1</div>
+// 	   <div class="tl-size1of12 tl-push5">of12 tl-size1</div>
+// 	   <div class="tl-size1of12 tl-push6">of12 tl-size1</div>
+// 	   <div class="tl-size1of12 tl-push7">of12 tl-size1</div>
+// 	   <div class="tl-size1of12 tl-push8">of12 tl-size1</div>
+// 	   <div class="tl-size1of12 tl-push9">of12 tl-size1</div>
+// 	   <div class="tl-size1of12 tl-push10">of12 tl-size1</div>
+// 	   <div class="tl-size1of12 tl-push11">of12 tl-size1</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-size2of12 tl-push0">of12 tl-size2</div>
+// 	   <div class="tl-size2of12 tl-push2">of12 tl-size2</div>
+// 	   <div class="tl-size2of12 tl-push4">of12 tl-size2</div>
+// 	   <div class="tl-size2of12 tl-push6">of12 tl-size2</div>
+// 	   <div class="tl-size2of12 tl-push8">of12 tl-size2</div>
+// 	   <div class="tl-size2of12 tl-push10">of12 tl-size2</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-size3of12 tl-push0">of12 tl-size3</div>
+// 	   <div class="tl-size3of12 tl-push3">of12 tl-size3</div>
+// 	   <div class="tl-size3of12 tl-push6">of12 tl-size3</div>
+// 	   <div class="tl-size3of12 tl-push9">of12 tl-size3</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-size4of12 tl-push0">of12 tl-size4</div>
+// 	   <div class="tl-size4of12 tl-push4">of12 tl-size4</div>
+// 	   <div class="tl-size4of12 tl-push8">of12 tl-size4</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-size5of12 tl-push0">of12 tl-size5</div>
+// 	   <div class="tl-size5of12 tl-push5">of12 tl-size5</div>
+// 	   <div class="tl-size2of12 tl-push10">of12 tl-size5</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 		<div class="tl-size6of12 tl-push0">of12 tl-size6</div>
+// 		<div class="tl-size6of12 tl-push6">
+// 			tl-size6
+		
+// 		   <div class="tl-row">
+// 			   <div class="tl-size3of12 tl-push0">of12 tl-size3</div>
+// 			   <div class="tl-size3of12 tl-push3">of12 tl-size3</div>
+// 			   <div class="tl-size3of12 tl-push6">of12 tl-size3
+			
+// 				   <div class="tl-size3of12 tl-push0">of12 tl-size3</div>
+// 				   <div class="tl-size3of12 tl-push3">of12 tl-size3</div>
+// 				   <div class="tl-size3of12 tl-push6">of12 tl-size3</div>
+// 				   <div class="tl-size3of12 tl-push9">of12 tl-size3</div>
+			
+// 				</div>
+// 			   <div class="tl-size3of12 tl-push9">of12 tl-size3</div>
+// 		   </div>
+		
+// 		</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-size7of12 tl-push0">of12 tl-size7</div>
+// 	   <div class="tl-size5of12 tl-push7">of12 tl-size7</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-size8of12 tl-push0">of12 tl-size8</div>
+// 	   <div class="tl-size4of12 tl-push8">of12 tl-size8</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-size9of12 tl-push0">of12 tl-size9</div>
+// 	   <div class="tl-size3of12 tl-push9">of12 tl-size9</div>
+// 	</div>
+
+// 	<div class="tl-row">
+// 	   <div class="tl-size12of12 tl-push0">of12 tl-size10</div>
+// 	</div>
+// </div>

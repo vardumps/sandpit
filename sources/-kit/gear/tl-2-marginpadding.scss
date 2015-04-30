@@ -1,0 +1,36 @@
+.tl-mauto {
+	margin: auto;
+}
+.tl-m {
+	margin: 0;
+}
+.tl-mtb {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.tl-mlr {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+$marginpadding-types: (m 'margin', p 'padding');
+$marginpadding-directions: (t 'top', r 'right', b 'bottom', l 'left');
+$marginpadding-marginRange: 10;
+@each $marginpadding-direction in $marginpadding-directions {
+
+	$marginpadding-key: nth($marginpadding-direction, 1);
+	$marginpadding-value: nth($marginpadding-direction, 2);
+
+	@each $marginpadding-type in $marginpadding-types {
+
+		$marginpadding-keyType: nth($marginpadding-type, 1);
+		$marginpadding-valueType: nth($marginpadding-type, 2);
+
+		@for $i from 0 through $marginpadding-marginRange {
+
+			.tl-#{$marginpadding-keyType}#{$marginpadding-key}#{$i} {
+				#{$marginpadding-valueType}-#{$marginpadding-value}: #{$i}px;
+			}
+		}
+	}
+}

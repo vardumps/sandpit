@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<!-- doc -->
+	<title>animations</title>
+
+	<!-- meta -->
+	<!-- enc -->
+	<meta charset="utf-8">
+
+	<!-- ua -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="keywords" content="" />
+	<!-- /meta -->
+
+	<!-- link -->
+	<!-- favicon -->
+	
+	<link rel="icon" type="image/x-icon" href="../../sandpit-favicon.ico" />
+	<link rel="SHORTCUT ICON" href="../../sandpit-favicon.ico"/>
+
+	<!-- /link -->
+
+	<!-- css -->
+	<link rel="stylesheet" href="animations.css" />
+	<!-- css -->
+
+	<!-- js -->
+	<!-- /js -->
+
+	<!-- /doc -->
+
+</head>
+<body>
+
+<a href="#" id="openPrimaryNav">open</a>
+<a href="#" id="closePrimaryNav">close</a>
+
+
+<div class="che-wrapper">
+
+	<div class="che-countdown">
+
+		<div class="che-countdown-bg"></div>
+	
+		<div class="che-countdown-valve">
+			<span class="ch-alert">eerst volgende deadline</span>
+		</div>
+
+		<div class="che-overview">
+
+			<div class="che-blok che-blok-reset">&nbsp;
+				<div class="che-blok">
+
+					<span>vandaag</span><time>12:30</time>
+					<p>Individueel items beluisteren en bevindingen noteren</p>
+
+					<div class="che-blok">
+
+						<span>vandaag</span><time>17:00</time>
+						<p>Groepsprojecten afronden en opleveren</p>
+
+						<div class="che-blok">
+
+							<span>morgen</span><time>14:15</time>
+							<p>Communicatie verslag inleveren</p>
+
+							<div class="che-blok">
+
+&nbsp;
+<!-- 								<span>morgen</span><time>16:30</time>
+								<p>Individueel items beluisteren en bevindingen noteren</p>							
+ -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div><!-- che-overview -->
+	</div><!-- che-countdown -->
+
+	<div class="che-ticker">
+		<marquee behavior='scroll' direction='left' scrollamount='3' onmouseover='this.stop()' onmouseout='this.start()'>
+		op Syrische Golanhoogten - Malaysia Airlines voorzie zware klap - Staking dreigt bij chloorfabriek AkzoNobel - E	
+		</marquee> 
+	</div>
+
+</div><!-- che-wrapper -->
+
+<div class="test">ewfiwe</div>
+<div class="test">ewfiwe</div>
+
+<script>
+window.onload = init;
+function init()
+{
+    document.getElementById('openPrimaryNav').onclick   = openPrimaryNav;
+    document.getElementById('closePrimaryNav').onclick  = closePrimaryNav;
+}
+
+function openPrimaryNav()
+{
+    document.getElementById('subject').setAttribute('class','container open');
+}
+
+function closePrimaryNav()
+{
+    document.getElementById('subject').setAttribute('class','container ');
+}
+</script>
+
+
+
+<!-- 
+<a href="#" id="openPrimaryNav">open</a>
+<a href="#" id="closePrimaryNav">close</a>
+
+    <div class="test">
+    	test
+   	</div>
+</div>
+
+
+<script>
+window.onload = init;
+function init()
+{
+    document.getElementById('openPrimaryNav').onclick   = openPrimaryNav;
+    document.getElementById('closePrimaryNav').onclick  = closePrimaryNav;
+}
+
+function openPrimaryNav()
+{
+    document.getElementById('rotate3d').setAttribute('class','rotate3d oneStep');
+}
+
+function closePrimaryNav()
+{
+    document.getElementById('rotate3d').setAttribute('class','rotate3d ');
+}
+</script> -->
+</body>
+</html>

@@ -1,0 +1,59 @@
+[class*="tl-input-box-positioning"],
+[class~=" tl-input-box-positioning"] {
+
+	> fieldset {
+		margin-bottom: 5px;
+	}
+	
+	.tl-input-box {
+		float: left;
+		display: block;
+		margin-bottom: 10px;
+		margin: 0 1%;
+	}
+	.tl-input-label {
+
+		@extend %tl-vertical-middle;
+		float: left;
+		display: block;
+		height: 30px;
+		margin: 0 1%;
+		text-indent: 5px;
+
+		&.tl-fixed {
+			width: 38%;
+			background: rgba(0,0,0,0.02);
+		}
+	}
+}
+
+// tl-input-box-positioning
+
+// <form class="tl-form tl-input-box-positioning" style="width: 500px;">
+// 	<fieldset>
+// 		<input class="tl-input-box tl-large" type="text" />
+// 		<label class="tl-input-label tl-fixed" for="">name</label>
+// 	</fieldset>
+// 	<fieldset>
+// 		<label class="tl-input-label tl-fixed" for="">name</label>
+// 		<input class="tl-input-box tl-large" type="text" />
+// 	</fieldset>
+// 	<fieldset>
+// 		<input class="tl-input-box tl-medium" type="text" />
+// 		<label class="tl-input-label tl-fixed" for="">name</label>
+// 		<input class="tl-input-box tl-medium" type="text" />
+// 	</fieldset>
+// 	<fieldset>
+// 		<input class="tl-input-box tl-small" type="text" />
+// 		<label class="tl-input-label tl-fixed" for="">name</label>
+// 		<input class="tl-input-box tl-small" type="text" />
+// 		<label class="tl-input-label tl-fixed" for="">name</label>
+// 	</fieldset>
+// 	<fieldset>
+// 		<label class="tl-input-label tl-fixed" for="">name</label>
+// 		<input class="tl-input-box tl-small" type="text" />
+// 		<label class="tl-input-label tl-fixed" for="">name</label>
+// 		<input class="tl-input-box tl-small" type="text" />
+// 	</fieldset>
+// </form>
+

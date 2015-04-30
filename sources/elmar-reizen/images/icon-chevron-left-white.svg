@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="58px" height="85px" viewBox="0 0 58 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron-left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="detail-lightbox-L-3.psd-(all-selected-layers)" sketch:type="MSLayerGroup" transform="translate(0.000000, -435.000000)" fill="#FFFFFF">
+            <path d="M53.795,502.8 L25.892,478.151 L52.36,451.97 C56.398,447.975 56.22,441.687 51.964,437.928 C47.707,434.169 40.983,434.357 36.945,438.353 L3.166,471.765 C1.24,473.671 0.179,476.26 0.253,478.875 C0.327,481.49 1.532,484.015 3.562,485.808 L39.172,517.264 C43.429,521.024 50.152,520.835 54.191,516.841 C58.228,512.846 58.051,506.56 53.795,502.8 L53.795,502.8 L53.795,502.8 Z" id="chevron-left" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

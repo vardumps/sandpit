@@ -1,0 +1,49 @@
+@mixin tl-gradient ( $gradient-startColor, $gradient-stopColor, $gradient-type: 'vertical' ) {
+
+	@if ( $gradient-type == 'vertical' ) {
+		background: $gradient-startColor;
+		background: -moz-linear-gradient(top, $gradient-startColor 0%, $gradient-stopColor 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$gradient-startColor), color-stop(100%,$gradient-stopColor));
+		background: -webkit-linear-gradient(top, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: -o-linear-gradient(top, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: -ms-linear-gradient(top, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: linear-gradient(to bottom, $gradient-startColor 0%,$gradient-stopColor 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$gradient-startColor}', endColorstr='#{$gradient-stopColor}',GradientType=0 );
+	} @elseif ( $gradient-type == 'horizontal' ) {
+		background: $gradient-startColor;
+		background: -moz-linear-gradient(left, $gradient-startColor 0%, $gradient-stopColor 100%);
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,$gradient-startColor), color-stop(100%,$gradient-stopColor));
+		background: -webkit-linear-gradient(left, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: -o-linear-gradient(left, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: -ms-linear-gradient(left, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: linear-gradient(to right, $gradient-startColor 0%,$gradient-stopColor 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$gradient-startColor}', endColorstr='#{$gradient-stopColor}',GradientType=1 );
+	} @elseif ( $gradient-type == 'diagonalup' ) {
+		background: $gradient-startColor;
+		background: -moz-linear-gradient(45deg, $gradient-startColor 0%, $gradient-stopColor 100%);
+		background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,$gradient-startColor), color-stop(100%,$gradient-stopColor));
+		background: -webkit-linear-gradient(45deg, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: -o-linear-gradient(45deg, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: -ms-linear-gradient(45deg, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: linear-gradient(45deg, $gradient-startColor 0%,$gradient-stopColor 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$gradient-startColor}', endColorstr='#{$gradient-stopColor}',GradientType=1 );
+	} @elseif ( $gradient-type == 'diagonaldown' ) {
+		background: $gradient-startColor;
+		background: -moz-linear-gradient(-45deg, $gradient-startColor 0%, $gradient-stopColor 100%);
+		background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$gradient-startColor), color-stop(100%,$gradient-stopColor));
+		background: -webkit-linear-gradient(-45deg, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: -o-linear-gradient(-45deg, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: -ms-linear-gradient(-45deg, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: linear-gradient(135deg, $gradient-startColor 0%,$gradient-stopColor 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$gradient-startColor}', endColorstr='#{$gradient-stopColor}',GradientType=1 );
+	} @elseif ( $gradient-type == 'radial' ) {
+		background: $gradient-startColor;
+		background: -moz-radial-gradient(center, ellipse cover,  $gradient-startColor 0%, $gradient-stopColor 100%);
+		background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$gradient-startColor), color-stop(100%,$gradient-stopColor));
+		background: -webkit-radial-gradient(center, ellipse cover, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: -o-radial-gradient(center, ellipse cover, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: -ms-radial-gradient(center, ellipse cover, $gradient-startColor 0%,$gradient-stopColor 100%);
+		background: radial-gradient(ellipse at center, $gradient-startColor 0%,$gradient-stopColor 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$gradient-startColor}', endColorstr='#{$gradient-stopColor}',GradientType=1 );
+	}
+}

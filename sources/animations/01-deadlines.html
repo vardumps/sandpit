@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+	<!-- doc -->
+	<title>animations</title>
+
+	<!-- meta -->
+	<!-- enc -->
+	<meta charset="utf-8">
+
+	<!-- ua -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0" />
+	<meta name="keywords" content="" />
+	<!-- /meta -->
+
+	<!-- link -->
+	<!-- favicon -->
+	
+	<link rel="icon" type="image/x-icon" href="../../sandpit-favicon.ico" />
+	<link rel="SHORTCUT ICON" href="../../sandpit-favicon.ico"/>
+
+	<!-- /link -->
+
+	<!-- css -->
+	<link rel="stylesheet" href="animations.css" />
+	<!-- css -->
+
+	<!-- js -->
+	<!-- /js -->
+
+	<!-- /doc -->
+
+</head>
+<body>
+
+
+<a href="#" id="openPrimaryNav">open</a>
+<a href="#" id="closePrimaryNav">close</a>
+
+<div id="primaryNav" class="ch-wrapper">
+	
+	<div class="ch-box ch-screen1">
+		
+		<div class="ch-deadline-main">
+			
+			<span class="ch-alert">eerst volgende deadline</span>
+			<h1>00:00:14:58</h1>
+			<em>vandaag om 10:30</em>
+			<p>
+				Klassikaal alle projecten beluisteren en evalueren tot en met morgen doorgaan.
+			</p>
+
+		</div>
+
+		<div class="ch-deadline-overview">
+			
+
+			<div class="ch-upcoming-row">
+				
+				<span>vandaag</span>
+				<time>12:30</time>
+				<p>
+					Individueel items beluisteren en bevindingen noteren
+				</p>
+
+			</div>
+
+			<div class="ch-upcoming-row">
+				
+				<span>vandaag</span>
+				<time>12:30</time>
+				<p>
+					Individueel items beluisteren en bevindingen noteren
+				</p>
+
+			</div>
+
+			<div class="ch-upcoming-row">
+				
+				<span>vandaag</span>
+				<time>12:30</time>
+				<p>
+					Individueel items beluisteren en bevindingen noteren
+				</p>
+
+			</div>
+
+			<div class="ch-upcoming-row">
+				
+				<span>vandaag</span>
+				<time>12:30</time>
+				<p>
+					Individueel items beluisteren en bevindingen noteren
+				</p>
+
+			</div>
+
+
+		</div>
+
+	</div><!-- ch-box -->
+
+</div>
+
+
+
+<script>
+window.onload = init;
+function init()
+{
+    document.getElementById('openPrimaryNav').onclick   = openPrimaryNav;
+    document.getElementById('closePrimaryNav').onclick  = closePrimaryNav;
+}
+
+function openPrimaryNav()
+{
+    document.getElementById('primaryNav').setAttribute('class','container open');
+}
+
+function closePrimaryNav()
+{
+    document.getElementById('primaryNav').setAttribute('class','container ');
+}
+</script>
+
+</body>
+</html>

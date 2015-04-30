@@ -1,0 +1,95 @@
+.sources-html {
+	content: '
+<form class="#{$pre}-form">
+
+	<div class="#{$pre}-input-container #{$pre}-input-search">
+		
+		<label for="fm-name">Zoeken:<span class="#{$pre}-form-mark">verplicht veld!</span></label>
+
+		<div class="#{$pre}-input"><i></i><ins>*</ins>
+			<input id="fm-name" class="#{$pre}-ellipsis" type="text" placeholder="ZOEKEN..." />
+		</div>
+		
+	</div>
+
+	<div class="#{$pre}-input-container #{$pre}-form-validate #{$pre}-form-error #{$pre}-form-active">
+		
+		<label for="fm-name">Naam:<span class="#{$pre}-form-mark">verplicht veld!</span></label>
+
+		<div class="#{$pre}-input"><i></i><ins>*</ins>
+			<input id="fm-name" class="#{$pre}-ellipsis" type="text" placeholder="kwef wefh khwuef khwefk uhwefh uiweghpreh kjxdhgkaevrhkihae" />
+		</div>
+		
+	</div>
+
+	<div class="#{$pre}-input-container #{$pre}-form-validate">
+		
+		<label for="fm-email">E-mailadres:<span class="#{$pre}-form-mark">verplicht veld!</span></label>
+
+		<div class="#{$pre}-input"><i></i><ins>*</ins>
+			<input id="fm-email" class="#{$pre}-ellipsis" type="text" placeholder="Uw e-mailadres..." />
+		</div>
+		
+	</div>
+
+	<div class="#{$pre}-input-container">
+		
+		<label for="fm-phonenumber">Telefoonnummer:<span class="#{$pre}-form-mark">verplicht veld!</span></label>
+
+		<div class="#{$pre}-input"><i></i><ins>*</ins>
+			<input id="fm-phonenumber" class="#{$pre}-ellipsis" type="text" placeholder="Uw telefoonnummer..." />
+		</div>
+		
+	</div>
+
+	<div class="#{$pre}-input-container #{$pre}-form-validate">
+		
+		<label for="fm-message">Bericht:<span class="#{$pre}-form-mark">verplicht veld!</span></label>
+
+		<div class="#{$pre}-input"><i></i><ins>*</ins>
+			<textarea id="fm-message" class="#{$pre}-ellipsis" placeholder="Uw bericht..."></textarea>
+		</div>
+		
+	</div>
+
+	<label for="#{$pre}-input-file">Bijlage:<!-- <span class="#{$pre}-form-mark">verplicht veld!</span> --></label>
+
+	<div class="#{$pre}-input-container #{$pre}-input-file">
+		
+		<div class="#{$pre}-input"><i></i><ins>*</ins>
+			<input type="file" onchange="getElementById("#{$pre}-input-file").value = getElementById(" #{$pre}-input-file-hidden ").value;" id="#{$pre}-input-file-hidden" size="1000" />
+			<input type="text" id="#{$pre}-input-file" />
+			<a class="#{$pre}-form-button-browse" href="#"><span>Bladeren</span></a>
+		</div>
+
+	</div>
+
+	<div class="#{$pre}-row #{$pre}-form-captcha #{$pre}-form-validate #{$pre}-form-error #{$pre}-mb10">
+
+		<div class="#{$pre}-size6of12 #{$pre}-relative">
+
+			<label for="fm-captcha">Veiligheidscode:</label>
+
+			<img src="" alt="captcha" />
+
+		</div>
+
+		<div class="#{$pre}-size6of12 #{$pre}-push6">
+
+			<div class="#{$pre}-input-container">
+				
+				<span class="#{$pre}-form-label">&nbsp;<span class="#{$pre}-form-mark">verplicht veld!</span></span>
+
+				<div class="#{$pre}-input"><i></i><ins>*</ins>
+					<input id="fm-captcha" class="#{$pre}-ellipsis" type="text" maxlength="6" placeholder="Code overnemen..." />
+				</div>
+				
+			</div>
+
+		</div>
+
+	</div>
+
+</form>
+	';
+}

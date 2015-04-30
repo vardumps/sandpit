@@ -1,0 +1,27 @@
+@mixin tl-transition ( $transition-time: .15s ) {
+
+	-webkit-transition: $transition-time ease-in-out;
+	-moz-transition: $transition-time ease-in-out;
+	-ms-transition: $transition-time ease-in-out;
+	-o-transition: $transition-time ease-in-out;
+	transition: $transition-time ease-in-out;
+}
+@mixin tl-transition-custom ( $transition-custom: all, $transition-time: .15s ) {
+
+	-webkit-transition: $transition-custom-property $transition-time ease-in-out;
+	-moz-transition: $transition-custom-property $transition-time ease-in-out;
+	-ms-transition: $transition-custom-property $transition-time ease-in-out;
+	-o-transition: $transition-custom-property $transition-time ease-in-out;
+	transition: $transition-custom-property $transition-time ease-in-out;
+}
+
+// Combine all the necessary transition depencies to avoid foulness usage of mixin includes; 
+// see example @ tl-face.scss
+// .tl-face {
+
+// 	&:before,
+// 	> .tl-eyes,
+// 	.tl-mouth {
+// 		@include tl-transition(0.2s);
+// 	}
+// }

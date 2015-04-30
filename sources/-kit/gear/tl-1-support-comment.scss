@@ -1,0 +1,3 @@
+@mixin tl-support-comment ($support-comment-type: 'ie8, ie9, ie10, chrome, ff, safari') {
+	content: 'supported in #{$support-comment-type}';
+}

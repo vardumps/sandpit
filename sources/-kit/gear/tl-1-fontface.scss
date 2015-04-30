@@ -1,0 +1,34 @@
+@mixin tl-fontface($fontface-fontfamily,$fontface-filename) {
+	@font-face {
+		font-family: #{$fontface-fontfamily};
+		src: 	url('fonts/#{$fontface-filename}.eot');
+		src: 	url('fonts/#{$fontface-filename}.eot#iefix') format('embedded-opentype'),
+				url('fonts/#{$fontface-filename}.woff') format('woff'),
+				url('fonts/#{$fontface-filename}.woff2') format('woff2'),
+				url('fonts/#{$fontface-filename}.ttf') format('truetype'),
+				url('fonts/#{$fontface-filename}.svg##{$fontface-filename}') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+}
+// @include tl-fontface('npo_sans_regular', 'radio4/npo_sans_regular');
+// @include tl-fontface('npo_sans_bold', 'radio4/npo_sans_bold');
+// @include tl-fontface('interstate_bold', 'ibc-demosite/Interstate_Bold');
+// @include tl-fontface('Interstate-Regular', 'ibc-demosite/Interstate-Regular');
+// @include tl-fontface('weathericons', 'weather-icons-master/weathericons-regular-webfont');
+
+@include tl-fontface('droid-regular', 'fujisan/DroidSerif');
+@include tl-fontface('opensans-regular', 'fujisan/OpenSans-Regular');
+@include tl-fontface('sushi-high', 'fujisan/SUSHH___');
+
+// @include tl-fontface('droid-regular', 'fujisan/DroidSerif');
+// @include tl-fontface('opensans-regular', 'fujisan/OpenSans-Regular');
+// @include tl-fontface('sushi-high', 'fujisan/SUSHH___');
+// @include tl-fontface('opensans-regular', 'fujisan/OpenSans-Regular');
+
+@include tl-fontface('fontawesome-webfont', 'framework/font-awesome-4.1.0');
+@include tl-fontface('Glyphicons Halflings', 'elmar-reizen/glyphicons-halflings-regular');
+@include tl-fontface('formular', 'elmar-reizen/formular');
+@include tl-fontface('formular-light', 'elmar-reizen/formular-light');
+@include tl-fontface('formular-medium', 'elmar-reizen/formular-medium');
+@include tl-fontface('formular-bold', 'elmar-reizen/formular-bold');
